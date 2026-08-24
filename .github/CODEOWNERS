@@ -1,0 +1,4 @@
+# CODEOWNERS — solicitudes de revisión automáticas
+# Cada cambio pide review del owner principal.
+
+* @ChristianGrimberg

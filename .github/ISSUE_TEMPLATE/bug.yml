@@ -1,0 +1,35 @@
+name: 🐛 Reportar error
+description: Reportar un error en contenido, código o configuración.
+title: "[BUG] "
+labels: ["bug"]
+
+body:
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "Descripción"
+      description: "Qué pasó."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduccion
+    attributes:
+      label: "Pasos para reproducir"
+      description: "Cómo reproducir el error."
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: "Comportamiento esperado"
+    validations:
+      required: true
+
+  - type: input
+    id: entorno
+    attributes:
+      label: "Entorno"
+      description: "Versiones, SO, contenedor, etc."
+      placeholder: "macOS 15.5, Docker Desktop 4.x, Azure SQL Edge latest"

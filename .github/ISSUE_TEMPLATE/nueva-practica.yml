@@ -1,0 +1,73 @@
+name: 📚 Nueva práctica
+description: Crear un issue para practicar una unidad específica del curso DP-800.
+title: "[PRÁCTICA] Unidad "
+labels: ["práctica", "módulo"]
+assignees:
+  - ChristianGrimberg
+
+body:
+  - type: dropdown
+    id: path
+    attributes:
+      label: "Path"
+      description: "A qué path pertenece la unidad."
+      options:
+        - Path 1 — Diseño y desarrollo
+        - Path 2 — Protección, optimización e implementación
+        - Path 3 — IA en SQL
+    validations:
+      required: true
+
+  - type: input
+    id: modulo
+    attributes:
+      label: "Módulo (X.Y)"
+      description: "Número del módulo (ej. 1.1)."
+      placeholder: "1.1"
+    validations:
+      required: true
+
+  - type: input
+    id: unidad
+    attributes:
+      label: "Unidad (X.Y.Z)"
+      description: "Código de la unidad (ej. 1.1.3)."
+      placeholder: "1.1.3"
+    validations:
+      required: true
+
+  - type: input
+    id: titulo
+    attributes:
+      label: "Título de la unidad"
+      description: "Como aparece en Microsoft Learn."
+      placeholder: "Creación de tablas eficaces"
+    validations:
+      required: true
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: "Objetivo personal"
+      description: "Qué esperás aprender o reforzar con esta práctica."
+      placeholder: "Reforzar el uso de tipos de datos y elegir índices apropiados."
+    validations:
+      required: false
+
+  - type: textarea
+    id: prerrequisitos
+    attributes:
+      label: "Prerrequisitos"
+      description: "Unidades o conceptos previos que tenés que tener frescos."
+      placeholder: "1.1.2 — Descripción de las opciones de plataforma"
+
+  - type: dropdown
+    id: esfuerzo
+    attributes:
+      label: "Esfuerzo estimado"
+      options:
+        - corto (<30 min)
+        - medio (30-90 min)
+        - largo (>90 min)
+    validations:
+      required: true

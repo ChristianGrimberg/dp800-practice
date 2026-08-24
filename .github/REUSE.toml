@@ -1,0 +1,8 @@
+version: "2"
+spdxId: "CC0-1.0"
+name: "Creative Commons Zero v1.0 Universal"
+comment: "This document is dedicated to the public domain under CC0 1.0. See https://creativecommons.org/publicdomain/zero/1.0/ for details."
+
+# Esta no es una licencia del repo; es solo una nota en .github/REUSE.toml
+# para que herramientas de compliance SPDX no salten con falsos positivos.
+# La licencia real del código es MIT (ver ./LICENSE).

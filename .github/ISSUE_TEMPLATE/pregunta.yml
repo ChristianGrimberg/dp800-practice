@@ -1,0 +1,18 @@
+name: ❓ Pregunta
+description: Hacer una pregunta sobre el contenido o el flujo de trabajo.
+title: "[PREGUNTA] "
+labels: ["pregunta"]
+
+body:
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: "Pregunta"
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: "Contexto adicional"
+      description: "Links, capturas, código relevante."
