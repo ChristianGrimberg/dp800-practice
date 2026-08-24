@@ -1,0 +1,11 @@
+{
+  "collapse-filter": true,
+  "search": "提供给 \"search\" 插件的设置",
+  "useLoadingAnimated": true,
+  "showAddTag": true,
+  "showRemoveTag": true,
+  "showMakeAbstract": false,
+  "propertiesDrilldown": false,
+  "fullQuery": false,
+  "instructional": false
+}

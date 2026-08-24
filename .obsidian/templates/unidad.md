@@ -1,0 +1,25 @@
+---
+tipo: Unidad
+curso:
+codigo_curso:
+path:
+modulo:
+unidad:
+codigo:
+slug:
+categoria:
+url:
+uid:
+duracion_min:
+fecha_actualizacion:
+estado:
+fecha_inicio:
+fecha_fin:
+ultimo_repaso:
+proximo_repaso:
+pr:
+conceptos:
+nivel:
+prerequisitos:
+esfuerzo:
+---

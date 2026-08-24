@@ -1,0 +1,10 @@
+{
+  "folder": ".obsidian/templates",
+  "dateFormat": "YYYY-MM-DD",
+  "dateFormatDelimiter": "-",
+  "timeFormat": "HH:mm",
+  "startWeekOn": 1,
+  "captureVersion": 2,
+  "excludedFolderPaths": [],
+  "quickAddBehavior": "append"
+}

@@ -1,0 +1,10 @@
+{
+  "baseFontSize": 16,
+  "translucency": false,
+  "theme": "moonstone",
+  "cssTheme": "minimal",
+  "accentColor": "",
+  "accentColorHueShift": 0,
+  "nativeMenus": false,
+  "useTranslucency": false
+}

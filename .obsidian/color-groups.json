@@ -1,0 +1,15 @@
+{
+  "colorGroups": [
+    { "tag": "leccion", "color": "#4f81bd" },
+    { "tag": "lab", "color": "#9bbb59" },
+    { "tag": "quiz", "color": "#c0504d" },
+    { "tag": "introduccion", "color": "#9bbb59" },
+    { "tag": "resumen", "color": "#8064a2" },
+    { "tag": "por-hacer", "color": "#7f7f7f" },
+    { "tag": "en-curso", "color": "#f0a020" },
+    { "tag": "hecho", "color": "#2c8a3a" },
+    { "tag": "módulo/path-1", "color": "#4f81bd" },
+    { "tag": "módulo/path-2", "color": "#c0504d" },
+    { "tag": "módulo/path-3", "color": "#9bbb59" }
+  ]
+}
