@@ -1,0 +1,75 @@
+services:
+  sql:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: dp800-sql
+    platform: linux/amd64
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: ${ACCEPT_EULA:-Y}
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?MSSQL_SA_PASSWORD es obligatorio (ver .env.example)}
+      MSSQL_PID: ${MSSQL_PID:-Developer}
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql-data:/var/opt/mssql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 60s
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: dp800-ollama
+    platform: linux/amd64
+    restart: unless-stopped
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST:-0.0.0.0}
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - curl -fsS http://localhost:11434/api/tags > /dev/null || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+
+  dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    container_name: dp800-dev
+    platform: linux/amd64
+    depends_on:
+      sql:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      MSSQL_HOST: sql
+      MSSQL_PORT: 1433
+      MSSQL_USER: sa
+      MSSQL_PASSWORD: ${MSSQL_SA_PASSWORD:?MSSQL_SA_PASSWORD es obligatorio (ver .env.example)}
+      OLLAMA_HOST: ollama
+      OLLAMA_PORT: 11434
+    volumes:
+      - ..:/workspaces/dp800-practice:cached
+      - vscode-ext:/home/vscode/.vscode-server/extensions
+      - vscode-config:/home/vscode/.vscode-server
+    command: sleep infinity
+    user: vscode
+
+volumes:
+  sql-data:
+  ollama-data:
+  vscode-ext:
+  vscode-config:

@@ -1,0 +1,58 @@
+{
+  "name": "dp800-practice",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspaces/dp800-practice",
+  "shutdownAction": "stopCompose",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.eol": "\n",
+        "files.encoding": "utf8",
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2,
+        "sqlfluff.dialect": "tsql",
+        "[sql]": {
+          "editor.defaultFormatter": "ms-mssql.mssql"
+        }
+      },
+      "extensions": [
+        "ms-mssql.mssql",
+        "ms-mssql.sql-database-projects",
+        "mtxr.sqltools",
+        "redhat.vscode-yaml",
+        "dbaeumer.vscode-eslint",
+        "continue.continue",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "forwardPorts": [1433, 11434, 8000],
+  "portsAttributes": {
+    "1433": {
+      "label": "Azure SQL Edge",
+      "onAutoForward": "silent"
+    },
+    "11434": {
+      "label": "Ollama",
+      "onAutoForward": "silent"
+    },
+    "8000": {
+      "label": "MkDocs dev server (opcional)",
+      "onAutoForward": "silent"
+    }
+  },
+  "remoteUser": "vscode",
+  "containerUser": "vscode"
+}
