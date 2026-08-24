@@ -9,6 +9,7 @@ codigo: 1.2.9
 slug: 1.2.9-prueba-de-conocimientos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/9-knowledge-check/
+uid: learn.wwl.implement-programmability-objects.9-knowledge-check
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

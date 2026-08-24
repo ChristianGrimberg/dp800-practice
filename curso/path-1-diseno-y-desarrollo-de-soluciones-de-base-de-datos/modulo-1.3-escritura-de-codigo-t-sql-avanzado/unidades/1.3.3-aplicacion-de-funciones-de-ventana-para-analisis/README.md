@@ -9,6 +9,7 @@ codigo: 1.3.3
 slug: 1.3.3-aplicacion-de-funciones-de-ventana-para-analisis
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/3-window-functions/
+uid: learn.write-advanced-sql-code.3-window-functions
 duracion_min: 14
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

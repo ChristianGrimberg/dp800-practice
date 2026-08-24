@@ -9,6 +9,7 @@ codigo: 3.3.8
 slug: 3.3.8-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/8-summary/
+uid: learn.wwl.design-implement-rag-with-sql.8-summary
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

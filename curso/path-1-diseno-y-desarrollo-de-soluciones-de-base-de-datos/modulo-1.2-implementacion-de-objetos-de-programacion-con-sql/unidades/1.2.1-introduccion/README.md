@@ -9,6 +9,7 @@ codigo: 1.2.1
 slug: 1.2.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/1-introduction/
+uid: learn.wwl.implement-programmability-objects.1-introduction
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

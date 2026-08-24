@@ -9,6 +9,7 @@ codigo: 2.2.6
 slug: 2.2.6-identificar-y-resolver-bloqueos-e-interbloqueos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/06-identify-resolve-blocking-deadlocks/
+uid: learn.wwl.optimize-database-performance.06-identify-resolve-blocking-deadlocks
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

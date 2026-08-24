@@ -9,6 +9,7 @@ codigo: 1.3.11
 slug: 1.3.11-evaluacion-del-modulo
 categoria: quiz
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/11-knowledge-check/
+uid: learn.write-advanced-sql-code.11-knowledge-check
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

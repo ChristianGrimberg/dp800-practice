@@ -9,6 +9,7 @@ codigo: 1.1.6
 slug: 1.1.6-exigir-la-integridad-de-los-datos-con-restricciones
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/6-design-implement-constraints/
+uid: learn.wwl.design-implement-database-objects.6-design-implement-constraints
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

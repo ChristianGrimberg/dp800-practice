@@ -9,6 +9,7 @@ codigo: 2.3.2
 slug: 2.3.2-creacion-compilacion-y-validacion-de-proyectos-de-sql-database
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/02-create-build-validate-sql-database-projects/
+uid: learn.wwl.implement-cicd-sql-database-projects.02-create-build-validate-sql-database-projects
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

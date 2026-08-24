@@ -9,6 +9,7 @@ codigo: 1.4.7
 slug: 1.4.7-conexion-a-puntos-de-conexion-de-servidor-mcp-incluidos-microsoft-sql-server-y-fabric-lakehouse
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/7-connect-mcp-server-endpoints/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.7-connect-mcp-server-endpoints
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

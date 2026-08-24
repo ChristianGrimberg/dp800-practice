@@ -9,6 +9,7 @@ codigo: 2.3.8
 slug: 2.3.8-ejercicio-implementacion-de-ci-cd-mediante-proyectos-de-sql-database
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/08-exercise-implement-cicd-sql-database-projects/
+uid: learn.wwl.implement-cicd-sql-database-projects.08-exercise-implement-cicd-sql-database-projects
 duracion_min: 45
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

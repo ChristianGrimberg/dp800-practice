@@ -9,6 +9,7 @@ codigo: 1.2.5
 slug: 1.2.5-creacion-de-funciones-con-valores-de-tabla
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/5-create-table-valued-functions/
+uid: learn.wwl.implement-programmability-objects.5-create-table-valued-functions
 duracion_min: 5
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

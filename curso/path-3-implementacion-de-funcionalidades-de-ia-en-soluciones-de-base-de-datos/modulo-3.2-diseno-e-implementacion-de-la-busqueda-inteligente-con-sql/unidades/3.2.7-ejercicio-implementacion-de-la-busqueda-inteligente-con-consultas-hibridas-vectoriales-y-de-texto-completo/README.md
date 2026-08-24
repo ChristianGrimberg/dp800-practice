@@ -9,6 +9,7 @@ codigo: 3.2.7
 slug: 3.2.7-ejercicio-implementacion-de-la-busqueda-inteligente-con-consultas-hibridas-vectoriales-y-de-texto-completo
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/07-exercise-implement-intelligent-search/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.07-exercise-implement-intelligent-search
 duracion_min: 30
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

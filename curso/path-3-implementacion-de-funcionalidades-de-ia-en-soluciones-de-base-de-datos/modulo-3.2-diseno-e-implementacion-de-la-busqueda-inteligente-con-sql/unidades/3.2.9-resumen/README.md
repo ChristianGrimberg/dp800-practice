@@ -9,6 +9,7 @@ codigo: 3.2.9
 slug: 3.2.9-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/09-summary/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.09-summary
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

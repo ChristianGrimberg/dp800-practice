@@ -9,6 +9,7 @@ codigo: 1.3.12
 slug: 1.3.12-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/12-summary/
+uid: learn.write-advanced-sql-code.12-summary
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

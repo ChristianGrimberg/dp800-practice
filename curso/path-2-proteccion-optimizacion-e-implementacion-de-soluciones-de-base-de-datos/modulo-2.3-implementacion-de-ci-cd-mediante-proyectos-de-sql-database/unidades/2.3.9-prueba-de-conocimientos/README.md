@@ -9,6 +9,7 @@ codigo: 2.3.9
 slug: 2.3.9-prueba-de-conocimientos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/09-knowledge-check/
+uid: learn.wwl.implement-cicd-sql-database-projects.09-knowledge-check
 duracion_min: 5
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

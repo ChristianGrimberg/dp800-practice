@@ -9,6 +9,7 @@ codigo: 2.1.2
 slug: 2.1.2-proteccion-de-datos-con-cifrado
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/2-design-implement-data-encryption/
+uid: learn.implement-data-security-compliance.2-design-implement-data-encryption
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

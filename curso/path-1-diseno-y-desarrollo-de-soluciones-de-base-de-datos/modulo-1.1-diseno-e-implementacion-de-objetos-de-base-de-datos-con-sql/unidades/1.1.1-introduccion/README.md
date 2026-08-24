@@ -9,6 +9,7 @@ codigo: 1.1.1
 slug: 1.1.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/1-introduction/
+uid: learn.wwl.design-implement-database-objects.1-introduction
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

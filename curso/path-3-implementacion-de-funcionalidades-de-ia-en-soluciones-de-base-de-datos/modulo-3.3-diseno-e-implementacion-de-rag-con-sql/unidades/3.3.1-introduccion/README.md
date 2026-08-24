@@ -9,6 +9,7 @@ codigo: 3.3.1
 slug: 3.3.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/1-introduction/
+uid: learn.wwl.design-implement-rag-with-sql.1-introduction
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

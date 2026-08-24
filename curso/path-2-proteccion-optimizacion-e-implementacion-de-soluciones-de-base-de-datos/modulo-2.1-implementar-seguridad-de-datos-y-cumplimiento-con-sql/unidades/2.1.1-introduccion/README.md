@@ -9,6 +9,7 @@ codigo: 2.1.1
 slug: 2.1.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/1-introduction/
+uid: learn.implement-data-security-compliance.1-introduction
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 3.2.1
 slug: 3.2.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/01-introduction/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.01-introduction
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

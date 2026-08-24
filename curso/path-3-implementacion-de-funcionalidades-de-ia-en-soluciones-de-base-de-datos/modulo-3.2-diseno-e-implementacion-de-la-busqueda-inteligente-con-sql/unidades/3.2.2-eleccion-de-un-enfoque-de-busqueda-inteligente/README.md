@@ -9,6 +9,7 @@ codigo: 3.2.2
 slug: 3.2.2-eleccion-de-un-enfoque-de-busqueda-inteligente
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/02-choose-intelligent-search-approach/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.02-choose-intelligent-search-approach
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

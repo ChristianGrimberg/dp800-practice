@@ -9,6 +9,7 @@ codigo: 3.3.5
 slug: 3.3.5-generar-y-procesar-respuestas-rag
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/5-generate-process-rag-responses/
+uid: learn.wwl.design-implement-rag-with-sql.5-generate-process-rag-responses
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

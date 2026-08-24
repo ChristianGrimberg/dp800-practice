@@ -9,6 +9,7 @@ codigo: 2.2.8
 slug: 2.2.8-prueba-de-conocimientos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/08-knowledge-check/
+uid: learn.wwl.optimize-database-performance.08-knowledge-check
 duracion_min: 5
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

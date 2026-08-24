@@ -9,6 +9,7 @@ codigo: 3.3.6
 slug: 3.3.6-ejercicio-implementacion-de-una-solucion-rag
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/6-exercise-implement-rag-solution/
+uid: learn.wwl.design-implement-rag-with-sql.6-exercise-implement-rag-solution
 duracion_min: 30
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

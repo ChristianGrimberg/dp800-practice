@@ -9,6 +9,7 @@ codigo: 3.3.3
 slug: 3.3.3-preparacion-del-contexto-de-recuperacion-para-el-aumento
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/3-prepare-retrieval-context-augmentation/
+uid: learn.wwl.design-implement-rag-with-sql.3-prepare-retrieval-context-augmentation
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 2.4.6
 slug: 2.4.6-recomendar-configuraciones-de-azure-monitor
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/6-recommend-azure-monitor-configurations/
+uid: learn.integrate-sql-solutions-azure-services.6-recommend-azure-monitor-configurations
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

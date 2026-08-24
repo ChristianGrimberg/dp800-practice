@@ -9,6 +9,7 @@ codigo: 2.4.3
 slug: 2.4.3-definicion-de-entidades-para-rest-y-graphql
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/3-define-entities-rest-graphql/
+uid: learn.integrate-sql-solutions-azure-services.3-define-entities-rest-graphql
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

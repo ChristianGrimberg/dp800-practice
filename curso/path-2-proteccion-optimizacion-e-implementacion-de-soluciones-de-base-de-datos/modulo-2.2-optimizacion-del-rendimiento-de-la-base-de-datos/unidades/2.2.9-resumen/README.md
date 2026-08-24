@@ -9,6 +9,7 @@ codigo: 2.2.9
 slug: 2.2.9-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/09-summary/
+uid: learn.wwl.optimize-database-performance.09-summary
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

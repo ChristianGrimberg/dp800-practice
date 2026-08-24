@@ -9,6 +9,7 @@ codigo: 1.1.3
 slug: 1.1.3-creacion-de-tablas-eficaces
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/3-design-implement-tables/
+uid: learn.wwl.design-implement-database-objects.3-design-implement-tables
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

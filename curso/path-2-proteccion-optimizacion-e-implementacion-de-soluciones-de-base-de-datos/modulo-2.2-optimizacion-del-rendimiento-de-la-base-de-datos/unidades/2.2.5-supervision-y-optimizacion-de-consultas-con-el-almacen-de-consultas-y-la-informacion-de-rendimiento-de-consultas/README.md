@@ -9,6 +9,7 @@ codigo: 2.2.5
 slug: 2.2.5-supervision-y-optimizacion-de-consultas-con-el-almacen-de-consultas-y-la-informacion-de-rendimiento-de-consultas
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/05-monitor-tune-queries-query-store/
+uid: learn.wwl.optimize-database-performance.05-monitor-tune-queries-query-store
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

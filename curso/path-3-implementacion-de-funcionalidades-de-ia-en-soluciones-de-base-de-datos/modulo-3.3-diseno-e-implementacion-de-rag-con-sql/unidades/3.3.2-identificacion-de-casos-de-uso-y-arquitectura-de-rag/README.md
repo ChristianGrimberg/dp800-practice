@@ -9,6 +9,7 @@ codigo: 3.3.2
 slug: 3.3.2-identificacion-de-casos-de-uso-y-arquitectura-de-rag
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/2-identify-rag-use-cases-architecture/
+uid: learn.wwl.design-implement-rag-with-sql.2-identify-rag-use-cases-architecture
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

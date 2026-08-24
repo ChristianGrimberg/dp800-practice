@@ -9,6 +9,7 @@ codigo: 2.3.7
 slug: 2.3.7-diseno-e-implementacion-de-una-estrategia-de-prueba
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/07-design-implement-testing-strategy/
+uid: learn.wwl.implement-cicd-sql-database-projects.07-design-implement-testing-strategy
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

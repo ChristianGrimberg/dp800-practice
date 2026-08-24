@@ -9,6 +9,7 @@ codigo: 1.3.10
 slug: 1.3.10-ejercicio-trabajo-con-funciones-json
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/10-exercise-write-advanced-sql-code/
+uid: learn.write-advanced-sql-code.10-exercise-write-advanced-sql-code
 duracion_min: 30
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

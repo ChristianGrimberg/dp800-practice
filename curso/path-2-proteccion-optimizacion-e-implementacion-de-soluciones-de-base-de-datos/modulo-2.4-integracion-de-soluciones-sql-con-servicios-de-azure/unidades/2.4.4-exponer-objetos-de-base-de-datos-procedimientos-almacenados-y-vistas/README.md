@@ -9,6 +9,7 @@ codigo: 2.4.4
 slug: 2.4.4-exponer-objetos-de-base-de-datos-procedimientos-almacenados-y-vistas
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/4-expose-database-objects-stored-procedures-views/
+uid: learn.integrate-sql-solutions-azure-services.4-expose-database-objects-stored-procedures-views
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

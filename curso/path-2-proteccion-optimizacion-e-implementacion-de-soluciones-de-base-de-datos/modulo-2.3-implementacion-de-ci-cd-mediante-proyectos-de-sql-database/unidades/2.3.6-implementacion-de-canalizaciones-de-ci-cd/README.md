@@ -9,6 +9,7 @@ codigo: 2.3.6
 slug: 2.3.6-implementacion-de-canalizaciones-de-ci-cd
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/06-implement-cicd-pipelines/
+uid: learn.wwl.implement-cicd-sql-database-projects.06-implement-cicd-pipelines
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

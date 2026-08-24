@@ -9,6 +9,7 @@ codigo: 2.1.3
 slug: 2.1.3-configuracion-del-enmascaramiento-dinamico-de-datos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/3-design-implement-dynamic-data-masking/
+uid: learn.implement-data-security-compliance.3-design-implement-dynamic-data-masking
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 2.2.1
 slug: 2.2.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/01-introduction/
+uid: learn.wwl.optimize-database-performance.01-introduction
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

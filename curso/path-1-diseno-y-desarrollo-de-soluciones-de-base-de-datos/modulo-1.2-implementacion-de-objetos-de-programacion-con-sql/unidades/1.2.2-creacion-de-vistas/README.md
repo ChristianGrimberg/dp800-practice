@@ -9,6 +9,7 @@ codigo: 1.2.2
 slug: 1.2.2-creacion-de-vistas
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/2-create-views/
+uid: learn.wwl.implement-programmability-objects.2-create-views
 duracion_min: 6
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

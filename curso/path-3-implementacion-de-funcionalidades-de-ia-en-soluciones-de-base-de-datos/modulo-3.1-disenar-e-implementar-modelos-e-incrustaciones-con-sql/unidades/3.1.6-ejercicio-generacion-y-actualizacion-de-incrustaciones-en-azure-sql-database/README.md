@@ -9,6 +9,7 @@ codigo: 3.1.6
 slug: 3.1.6-ejercicio-generacion-y-actualizacion-de-incrustaciones-en-azure-sql-database
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/06-exercise-generate-update-embeddings-sql/
+uid: learn.wwl.design-implement-models-embeddings-with-sql.06-exercise-generate-update-embeddings-sql
 duracion_min: 20
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

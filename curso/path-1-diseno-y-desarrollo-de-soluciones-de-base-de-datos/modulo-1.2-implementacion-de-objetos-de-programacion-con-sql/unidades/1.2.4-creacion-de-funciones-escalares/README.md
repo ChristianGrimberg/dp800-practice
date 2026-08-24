@@ -9,6 +9,7 @@ codigo: 1.2.4
 slug: 1.2.4-creacion-de-funciones-escalares
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/4-create-scalar-functions/
+uid: learn.wwl.implement-programmability-objects.4-create-scalar-functions
 duracion_min: 6
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

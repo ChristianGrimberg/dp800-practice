@@ -9,6 +9,7 @@ codigo: 3.2.5
 slug: 3.2.5-implementacion-de-patrones-de-consulta-de-busqueda-vectorial
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/05-implement-vector-search-query-patterns/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.05-implement-vector-search-query-patterns
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

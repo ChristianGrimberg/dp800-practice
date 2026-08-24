@@ -9,6 +9,7 @@ codigo: 2.1.11
 slug: 2.1.11-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/11-summary/
+uid: learn.implement-data-security-compliance.11-summary
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

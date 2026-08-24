@@ -9,6 +9,7 @@ codigo: 1.4.8
 slug: 1.4.8-ejercicio-configuracion-de-herramientas-asistidas-por-ia-para-el-desarrollo-de-bases-de-datos
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/8-exercise-design-implement-sql-solutions-ai-assisted-tools/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.8-exercise-design-implement-sql-solutions-ai-assisted-tools
 duracion_min: 15
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

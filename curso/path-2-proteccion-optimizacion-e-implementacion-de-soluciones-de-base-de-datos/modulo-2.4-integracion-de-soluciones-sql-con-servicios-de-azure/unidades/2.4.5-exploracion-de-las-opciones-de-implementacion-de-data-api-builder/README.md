@@ -9,6 +9,7 @@ codigo: 2.4.5
 slug: 2.4.5-exploracion-de-las-opciones-de-implementacion-de-data-api-builder
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/5-deploy-data-api-builder-azure-services/
+uid: learn.integrate-sql-solutions-azure-services.5-deploy-data-api-builder-azure-services
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

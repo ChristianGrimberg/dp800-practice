@@ -44,5 +44,7 @@
   ],
   "markdownlintConfig": "",
   "attachmentFolderPath": "",
-  "showUnsupportedFilesBanner": true
+  "showUnsupportedFilesBanner": true,
+  "accentColorHueShift": 0,
+  "useTranslucency": false
 }

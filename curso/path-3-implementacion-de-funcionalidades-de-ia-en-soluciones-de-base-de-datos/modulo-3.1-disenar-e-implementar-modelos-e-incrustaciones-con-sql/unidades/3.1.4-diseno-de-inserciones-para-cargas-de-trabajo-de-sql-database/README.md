@@ -9,6 +9,7 @@ codigo: 3.1.4
 slug: 3.1.4-diseno-de-inserciones-para-cargas-de-trabajo-de-sql-database
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/04-design-embeddings-sql-database-workloads/
+uid: learn.wwl.design-implement-models-embeddings-with-sql.04-design-embeddings-sql-database-workloads
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 2.2.7
 slug: 2.2.7-ejercicio-optimizacion-del-rendimiento-de-las-consultas
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/07-exercise-optimize-query-performance/
+uid: learn.wwl.optimize-database-performance.07-exercise-optimize-query-performance
 duracion_min: 45
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

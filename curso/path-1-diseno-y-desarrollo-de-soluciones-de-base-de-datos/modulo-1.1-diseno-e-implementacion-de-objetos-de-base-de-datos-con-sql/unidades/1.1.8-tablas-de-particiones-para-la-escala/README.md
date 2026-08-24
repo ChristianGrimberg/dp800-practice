@@ -9,6 +9,7 @@ codigo: 1.1.8
 slug: 1.1.8-tablas-de-particiones-para-la-escala
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/8-design-implement-partitioning/
+uid: learn.wwl.design-implement-database-objects.8-design-implement-partitioning
 duracion_min: 13
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

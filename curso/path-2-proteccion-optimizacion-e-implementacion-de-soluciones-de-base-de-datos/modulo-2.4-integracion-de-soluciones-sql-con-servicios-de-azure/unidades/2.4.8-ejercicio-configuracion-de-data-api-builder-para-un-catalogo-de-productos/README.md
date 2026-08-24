@@ -9,6 +9,7 @@ codigo: 2.4.8
 slug: 2.4.8-ejercicio-configuracion-de-data-api-builder-para-un-catalogo-de-productos
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/8-exercise-data-api-builder/
+uid: learn.integrate-sql-solutions-azure-services.8-exercise-data-api-builder
 duracion_min: 30
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

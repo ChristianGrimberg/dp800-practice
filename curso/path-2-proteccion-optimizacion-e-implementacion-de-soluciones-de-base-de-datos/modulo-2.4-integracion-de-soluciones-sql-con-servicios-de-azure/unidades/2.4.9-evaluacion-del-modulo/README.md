@@ -9,6 +9,7 @@ codigo: 2.4.9
 slug: 2.4.9-evaluacion-del-modulo
 categoria: quiz
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/9-knowledge-check/
+uid: learn.integrate-sql-solutions-azure-services.9-knowledge-check
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

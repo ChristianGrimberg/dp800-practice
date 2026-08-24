@@ -9,6 +9,7 @@ codigo: 3.2.6
 slug: 3.2.6-implementacion-de-la-busqueda-hibrida-y-la-clasificacion
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/06-implement-hybrid-search-ranking/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.06-implement-hybrid-search-ranking
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

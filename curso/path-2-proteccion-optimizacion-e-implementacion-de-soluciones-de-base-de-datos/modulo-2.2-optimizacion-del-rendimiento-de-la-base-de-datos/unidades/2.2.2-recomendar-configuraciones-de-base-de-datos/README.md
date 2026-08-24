@@ -9,6 +9,7 @@ codigo: 2.2.2
 slug: 2.2.2-recomendar-configuraciones-de-base-de-datos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/02-recommend-database-configurations/
+uid: learn.wwl.optimize-database-performance.02-recommend-database-configurations
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

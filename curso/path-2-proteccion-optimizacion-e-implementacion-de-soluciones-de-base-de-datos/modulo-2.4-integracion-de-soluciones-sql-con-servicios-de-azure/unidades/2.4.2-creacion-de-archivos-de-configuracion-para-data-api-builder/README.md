@@ -9,6 +9,7 @@ codigo: 2.4.2
 slug: 2.4.2-creacion-de-archivos-de-configuracion-para-data-api-builder
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/2-create-configuration-files-data-api-builder/
+uid: learn.integrate-sql-solutions-azure-services.2-create-configuration-files-data-api-builder
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

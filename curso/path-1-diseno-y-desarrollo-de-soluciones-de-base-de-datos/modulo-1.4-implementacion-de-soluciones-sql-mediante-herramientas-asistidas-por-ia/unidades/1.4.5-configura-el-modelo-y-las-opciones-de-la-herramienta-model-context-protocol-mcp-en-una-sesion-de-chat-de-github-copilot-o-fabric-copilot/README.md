@@ -9,6 +9,7 @@ codigo: 1.4.5
 slug: 1.4.5-configura-el-modelo-y-las-opciones-de-la-herramienta-model-context-protocol-mcp-en-una-sesion-de-chat-de-github-copilot-o-fabric-copilot
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/5-configure-model-mcp-tool-options/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.5-configure-model-mcp-tool-options
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

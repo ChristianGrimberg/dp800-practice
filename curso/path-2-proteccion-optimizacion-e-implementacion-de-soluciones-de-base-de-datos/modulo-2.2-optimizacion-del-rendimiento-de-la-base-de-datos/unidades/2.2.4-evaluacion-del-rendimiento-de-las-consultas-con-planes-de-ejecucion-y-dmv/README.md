@@ -9,6 +9,7 @@ codigo: 2.2.4
 slug: 2.2.4-evaluacion-del-rendimiento-de-las-consultas-con-planes-de-ejecucion-y-dmv
 categoria: quiz
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/04-evaluate-query-performance/
+uid: learn.wwl.optimize-database-performance.04-evaluate-query-performance
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

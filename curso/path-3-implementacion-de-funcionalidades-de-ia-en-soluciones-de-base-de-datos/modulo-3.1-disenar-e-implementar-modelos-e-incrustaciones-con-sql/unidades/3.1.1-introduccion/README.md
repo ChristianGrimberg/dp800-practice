@@ -9,6 +9,7 @@ codigo: 3.1.1
 slug: 3.1.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/01-introduction/
+uid: learn.wwl.design-implement-models-embeddings-with-sql.01-introduction
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

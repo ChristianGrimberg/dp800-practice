@@ -9,6 +9,7 @@ codigo: 1.1.5
 slug: 1.1.5-uso-de-tipos-de-tabla-especializados
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/5-specialized-table-types/
+uid: learn.wwl.design-implement-database-objects.5-specialized-table-types
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

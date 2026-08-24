@@ -9,6 +9,7 @@ codigo: 3.2.4
 slug: 3.2.4-preparacion-de-sql-para-la-busqueda-de-vectores
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/04-prepare-sql-vector-search/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.04-prepare-sql-vector-search
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

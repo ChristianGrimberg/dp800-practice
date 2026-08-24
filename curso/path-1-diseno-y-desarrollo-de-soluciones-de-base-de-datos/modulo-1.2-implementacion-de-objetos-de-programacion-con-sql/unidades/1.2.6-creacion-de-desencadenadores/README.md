@@ -9,6 +9,7 @@ codigo: 1.2.6
 slug: 1.2.6-creacion-de-desencadenadores
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/6-create-triggers/
+uid: learn.wwl.implement-programmability-objects.6-create-triggers
 duracion_min: 6
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

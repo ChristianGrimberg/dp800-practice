@@ -9,6 +9,7 @@ codigo: 1.1.9
 slug: 1.1.9-ejercicio-creacion-y-mantenimiento-de-objetos-de-base-de-datos
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/9-exercise-create-database-objects/
+uid: learn.wwl.design-implement-database-objects.9-exercise-create-database-objects
 duracion_min: 15
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 1.3.1
 slug: 1.3.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/1-introduction/
+uid: learn.write-advanced-sql-code.1-introduction
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

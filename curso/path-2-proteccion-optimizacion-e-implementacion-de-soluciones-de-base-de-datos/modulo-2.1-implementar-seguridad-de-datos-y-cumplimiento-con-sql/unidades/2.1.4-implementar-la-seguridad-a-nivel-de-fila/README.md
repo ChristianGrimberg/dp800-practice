@@ -9,6 +9,7 @@ codigo: 2.1.4
 slug: 2.1.4-implementar-la-seguridad-a-nivel-de-fila
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/4-design-implement-row-level-security/
+uid: learn.implement-data-security-compliance.4-design-implement-row-level-security
 duracion_min: 11
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

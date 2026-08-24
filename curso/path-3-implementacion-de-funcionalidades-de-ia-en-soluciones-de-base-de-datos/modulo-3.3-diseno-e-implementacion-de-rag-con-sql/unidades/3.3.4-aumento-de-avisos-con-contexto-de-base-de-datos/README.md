@@ -9,6 +9,7 @@ codigo: 3.3.4
 slug: 3.3.4-aumento-de-avisos-con-contexto-de-base-de-datos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/4-augment-prompts-database-context/
+uid: learn.wwl.design-implement-rag-with-sql.4-augment-prompts-database-context
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

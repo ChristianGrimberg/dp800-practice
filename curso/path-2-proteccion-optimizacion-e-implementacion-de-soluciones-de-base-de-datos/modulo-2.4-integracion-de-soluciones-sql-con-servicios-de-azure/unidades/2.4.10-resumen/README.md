@@ -9,6 +9,7 @@ codigo: 2.4.10
 slug: 2.4.10-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/10-summary/
+uid: learn.integrate-sql-solutions-azure-services.10-summary
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

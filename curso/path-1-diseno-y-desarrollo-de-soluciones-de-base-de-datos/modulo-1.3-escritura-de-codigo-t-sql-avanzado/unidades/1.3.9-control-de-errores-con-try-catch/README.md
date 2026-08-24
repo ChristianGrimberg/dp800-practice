@@ -9,6 +9,7 @@ codigo: 1.3.9
 slug: 1.3.9-control-de-errores-con-try-catch
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/9-error-handling/
+uid: learn.write-advanced-sql-code.9-error-handling
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

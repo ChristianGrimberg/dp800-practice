@@ -9,6 +9,7 @@ codigo: 1.3.7
 slug: 1.3.7-recorrer-las-relaciones-mediante-consultas-graphaticas
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/7-graph-queries/
+uid: learn.write-advanced-sql-code.7-graph-queries
 duracion_min: 14
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

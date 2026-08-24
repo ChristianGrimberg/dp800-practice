@@ -9,6 +9,7 @@ codigo: 2.1.9
 slug: 2.1.9-ejercicio-implementacion-de-caracteristicas-de-seguridad
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/9-exercise-implement-security-features/
+uid: learn.implement-data-security-compliance.9-exercise-implement-security-features
 duracion_min: 30
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

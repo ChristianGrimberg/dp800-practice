@@ -9,6 +9,7 @@ codigo: 1.1.7
 slug: 1.1.7-administracion-de-columnas-e-indices-json
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/7-design-implement-json/
+uid: learn.wwl.design-implement-database-objects.7-design-implement-json
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

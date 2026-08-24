@@ -9,6 +9,7 @@ codigo: 2.1.7
 slug: 2.1.7-configuracion-del-acceso-seguro-a-los-servicios-de-ia
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/7-secure-model-endpoints/
+uid: learn.implement-data-security-compliance.7-secure-model-endpoints
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

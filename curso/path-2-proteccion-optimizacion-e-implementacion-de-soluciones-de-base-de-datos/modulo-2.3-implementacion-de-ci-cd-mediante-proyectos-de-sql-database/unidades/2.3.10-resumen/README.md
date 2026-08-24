@@ -9,6 +9,7 @@ codigo: 2.3.10
 slug: 2.3.10-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/10-summary/
+uid: learn.wwl.implement-cicd-sql-database-projects.10-summary
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

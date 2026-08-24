@@ -9,6 +9,7 @@ codigo: 2.3.3
 slug: 2.3.3-configuracion-del-control-de-codigo-fuente-y-administracion-de-datos-de-referencia
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/03-configure-source-control-manage-reference-data/
+uid: learn.wwl.implement-cicd-sql-database-projects.03-configure-source-control-manage-reference-data
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

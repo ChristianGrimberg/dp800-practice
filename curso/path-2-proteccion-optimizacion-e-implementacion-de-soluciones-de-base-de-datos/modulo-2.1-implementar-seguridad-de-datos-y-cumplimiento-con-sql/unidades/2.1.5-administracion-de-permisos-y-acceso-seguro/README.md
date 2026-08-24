@@ -9,6 +9,7 @@ codigo: 2.1.5
 slug: 2.1.5-administracion-de-permisos-y-acceso-seguro
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/5-design-implement-object-level-permissions/
+uid: learn.implement-data-security-compliance.5-design-implement-object-level-permissions
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

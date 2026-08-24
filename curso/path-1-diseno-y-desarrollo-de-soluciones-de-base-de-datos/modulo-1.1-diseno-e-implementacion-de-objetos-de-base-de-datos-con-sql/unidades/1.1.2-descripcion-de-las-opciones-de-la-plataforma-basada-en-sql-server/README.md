@@ -9,6 +9,7 @@ codigo: 1.1.2
 slug: 1.1.2-descripcion-de-las-opciones-de-la-plataforma-basada-en-sql-server
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/2-understanding-platform-choices/
+uid: learn.wwl.design-implement-database-objects.2-understanding-platform-choices
 duracion_min: 6
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

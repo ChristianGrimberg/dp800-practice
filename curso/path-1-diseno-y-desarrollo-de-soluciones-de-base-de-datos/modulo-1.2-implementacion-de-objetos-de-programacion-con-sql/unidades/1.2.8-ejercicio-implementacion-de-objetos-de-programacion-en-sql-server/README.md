@@ -9,6 +9,7 @@ codigo: 1.2.8
 slug: 1.2.8-ejercicio-implementacion-de-objetos-de-programacion-en-sql-server
 categoria: lab
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/8-exercise-implement-programmability-objects/
+uid: learn.wwl.implement-programmability-objects.8-exercise-implement-programmability-objects
 duracion_min: 45
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

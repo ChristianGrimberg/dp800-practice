@@ -9,6 +9,7 @@ codigo: 1.3.5
 slug: 1.3.5-emparejar-patrones-con-expresiones-regulares
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/5-regular-expressions/
+uid: learn.write-advanced-sql-code.5-regular-expressions
 duracion_min: 14
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

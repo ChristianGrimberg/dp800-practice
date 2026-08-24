@@ -9,6 +9,7 @@ codigo: 2.1.10
 slug: 2.1.10-evaluacion-del-modulo
 categoria: quiz
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/10-knowledge-check/
+uid: learn.implement-data-security-compliance.10-knowledge-check
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

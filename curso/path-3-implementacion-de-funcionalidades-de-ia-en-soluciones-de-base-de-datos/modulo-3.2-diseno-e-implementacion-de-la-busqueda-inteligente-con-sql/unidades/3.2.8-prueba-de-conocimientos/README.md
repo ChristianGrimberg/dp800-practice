@@ -9,6 +9,7 @@ codigo: 3.2.8
 slug: 3.2.8-prueba-de-conocimientos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/08-knowledge-check/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.08-knowledge-check
 duracion_min: 5
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

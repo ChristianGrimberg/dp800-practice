@@ -9,6 +9,7 @@ codigo: 3.1.2
 slug: 3.1.2-descripcion-y-evaluacion-de-modelos-para-cargas-de-trabajo-de-sql-database
 categoria: quiz
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/02-understand-evaluate-models-sql-database-workloads/
+uid: learn.wwl.design-implement-models-embeddings-with-sql.02-understand-evaluate-models-sql-database-workloads
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 1.3.4
 slug: 1.3.4-procesamiento-de-datos-json-con-funciones-integradas
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/4-json-functions/
+uid: learn.write-advanced-sql-code.4-json-functions
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

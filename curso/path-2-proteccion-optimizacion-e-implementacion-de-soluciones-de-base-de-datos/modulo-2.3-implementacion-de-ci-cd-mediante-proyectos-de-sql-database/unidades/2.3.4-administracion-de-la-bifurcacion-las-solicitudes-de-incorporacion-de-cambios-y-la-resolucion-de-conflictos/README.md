@@ -9,6 +9,7 @@ codigo: 2.3.4
 slug: 2.3.4-administracion-de-la-bifurcacion-las-solicitudes-de-incorporacion-de-cambios-y-la-resolucion-de-conflictos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/04-manage-branching-pull-requests-conflict-resolution/
+uid: learn.wwl.implement-cicd-sql-database-projects.04-manage-branching-pull-requests-conflict-resolution
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

@@ -9,6 +9,7 @@ codigo: 1.4.4
 slug: 1.4.4-habilitacion-de-github-copilot-y-fabric-copilot
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/4-enable-github-copilot-fabric-copilot/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.4-enable-github-copilot-fabric-copilot
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

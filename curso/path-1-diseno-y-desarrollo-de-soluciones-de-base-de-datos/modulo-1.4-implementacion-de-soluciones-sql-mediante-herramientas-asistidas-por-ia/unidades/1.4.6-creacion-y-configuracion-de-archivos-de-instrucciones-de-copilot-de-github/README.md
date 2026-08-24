@@ -9,6 +9,7 @@ codigo: 1.4.6
 slug: 1.4.6-creacion-y-configuracion-de-archivos-de-instrucciones-de-copilot-de-github
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/6-create-configure-copilot-instruction-files/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.6-create-configure-copilot-instruction-files
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

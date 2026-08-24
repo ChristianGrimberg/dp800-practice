@@ -9,6 +9,7 @@ codigo: 2.1.6
 slug: 2.1.6-implementacion-de-la-auditoria
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/6-implement-auditing/
+uid: learn.implement-data-security-compliance.6-implement-auditing
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

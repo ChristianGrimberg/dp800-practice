@@ -9,6 +9,7 @@ codigo: 1.4.2
 slug: 1.4.2-descripcion-de-las-herramientas-de-desarrollo-asistidas-por-ia-disponibles-para-las-plataformas-de-microsoft-sql
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/2-describe-ai-assisted-development-tools/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.2-describe-ai-assisted-development-tools
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

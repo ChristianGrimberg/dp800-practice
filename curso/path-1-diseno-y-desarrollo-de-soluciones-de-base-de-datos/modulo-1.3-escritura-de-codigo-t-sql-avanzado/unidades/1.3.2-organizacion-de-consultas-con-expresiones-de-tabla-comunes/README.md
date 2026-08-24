@@ -9,6 +9,7 @@ codigo: 1.3.2
 slug: 1.3.2-organizacion-de-consultas-con-expresiones-de-tabla-comunes
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/2-common-table-expressions/
+uid: learn.write-advanced-sql-code.2-common-table-expressions
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

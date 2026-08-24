@@ -9,6 +9,7 @@ codigo: 2.4.1
 slug: 2.4.1-introduccion
 categoria: introduccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/1-introduction/
+uid: learn.integrate-sql-solutions-azure-services.1-introduction
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

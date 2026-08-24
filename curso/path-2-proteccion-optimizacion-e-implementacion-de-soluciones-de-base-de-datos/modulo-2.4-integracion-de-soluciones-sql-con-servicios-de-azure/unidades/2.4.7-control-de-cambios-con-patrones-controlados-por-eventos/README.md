@@ -9,6 +9,7 @@ codigo: 2.4.7
 slug: 2.4.7-control-de-cambios-con-patrones-controlados-por-eventos
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/7-handle-changes-event-driven-patterns/
+uid: learn.integrate-sql-solutions-azure-services.7-handle-changes-event-driven-patterns
 duracion_min: 12
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

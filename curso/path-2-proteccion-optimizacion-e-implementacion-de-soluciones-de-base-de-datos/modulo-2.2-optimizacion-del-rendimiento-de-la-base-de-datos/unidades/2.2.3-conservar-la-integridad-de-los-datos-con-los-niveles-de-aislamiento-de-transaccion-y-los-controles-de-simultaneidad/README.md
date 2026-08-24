@@ -9,6 +9,7 @@ codigo: 2.2.3
 slug: 2.2.3-conservar-la-integridad-de-los-datos-con-los-niveles-de-aislamiento-de-transaccion-y-los-controles-de-simultaneidad
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/03-preserve-data-integrity-isolation-levels/
+uid: learn.wwl.optimize-database-performance.03-preserve-data-integrity-isolation-levels
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

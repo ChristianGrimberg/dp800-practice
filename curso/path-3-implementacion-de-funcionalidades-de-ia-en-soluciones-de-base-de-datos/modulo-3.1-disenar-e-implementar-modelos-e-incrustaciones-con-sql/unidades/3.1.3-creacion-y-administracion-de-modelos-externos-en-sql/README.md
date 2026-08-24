@@ -9,6 +9,7 @@ codigo: 3.1.3
 slug: 3.1.3-creacion-y-administracion-de-modelos-externos-en-sql
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/03-create-manage-external-model-sql/
+uid: learn.wwl.design-implement-models-embeddings-with-sql.03-create-manage-external-model-sql
 duracion_min: 7
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

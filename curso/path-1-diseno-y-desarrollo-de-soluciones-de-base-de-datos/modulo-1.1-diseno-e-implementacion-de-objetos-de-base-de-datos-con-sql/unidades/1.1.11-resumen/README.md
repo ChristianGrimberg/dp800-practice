@@ -9,6 +9,7 @@ codigo: 1.1.11
 slug: 1.1.11-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/11-summary/
+uid: learn.wwl.design-implement-database-objects.11-summary
 duracion_min: 3
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

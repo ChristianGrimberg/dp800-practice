@@ -9,6 +9,7 @@ codigo: 3.2.3
 slug: 3.2.3-implementacion-de-la-busqueda-de-texto-completo
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/03-implement-full-text-search/
+uid: learn.wwl.design-implement-intelligent-search-with-sql.03-implement-full-text-search
 duracion_min: 8
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

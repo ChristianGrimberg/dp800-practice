@@ -9,6 +9,7 @@ codigo: 2.3.5
 slug: 2.3.5-deteccion-y-resolucion-de-la-deriva-del-esquema
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/05-detect-resolve-schema-drift/
+uid: learn.wwl.implement-cicd-sql-database-projects.05-detect-resolve-schema-drift
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

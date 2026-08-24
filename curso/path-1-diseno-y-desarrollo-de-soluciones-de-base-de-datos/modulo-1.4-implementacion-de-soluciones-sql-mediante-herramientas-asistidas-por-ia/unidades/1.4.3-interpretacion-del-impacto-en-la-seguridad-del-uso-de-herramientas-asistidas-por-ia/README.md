@@ -9,6 +9,7 @@ codigo: 1.4.3
 slug: 1.4.3-interpretacion-del-impacto-en-la-seguridad-del-uso-de-herramientas-asistidas-por-ia
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/3-interpret-security-impact/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.3-interpret-security-impact
 duracion_min: 10
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

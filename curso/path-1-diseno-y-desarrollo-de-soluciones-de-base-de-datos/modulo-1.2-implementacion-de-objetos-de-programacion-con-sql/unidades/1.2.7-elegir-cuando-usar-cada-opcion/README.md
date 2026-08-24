@@ -9,6 +9,7 @@ codigo: 1.2.7
 slug: 1.2.7-elegir-cuando-usar-cada-opcion
 categoria: leccion
 url: https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/7-choosing-when-to-use-each-programmability-object/
+uid: learn.wwl.implement-programmability-objects.7-choosing-when-to-use-each-programmability-object
 duracion_min: 9
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

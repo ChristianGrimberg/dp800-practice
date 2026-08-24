@@ -9,6 +9,7 @@ codigo: 1.4.10
 slug: 1.4.10-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/10-summary/
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.10-summary
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer

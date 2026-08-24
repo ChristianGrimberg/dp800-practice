@@ -9,6 +9,7 @@ codigo: 3.1.8
 slug: 3.1.8-resumen
 categoria: resumen
 url: https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/08-summary/
+uid: learn.wwl.design-implement-models-embeddings-with-sql.08-summary
 duracion_min: 2
 fecha_actualizacion: '2026-08-24'
 estado: por-hacer
