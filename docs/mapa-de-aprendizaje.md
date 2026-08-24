@@ -6,7 +6,7 @@ generado_por: scripts/generar-mapa.sh
 
 # Mapa de aprendizaje — DP-800 practice
 
-_Última regeneración: 2026-08-24 · Total unidades: 109_
+_Última regeneración: 2026-08-24 · Total unidades: 108_
 
 > Este mapa se regenera automáticamente en CI cada vez que cambia un front-matter de unidad. Para repasar eficientemente, empezá por la sección "Para repasar hoy".
 
@@ -14,7 +14,7 @@ _Última regeneración: 2026-08-24 · Total unidades: 109_
 
 | Estado | Cantidad | % |
 |---|---|---|
-| por-hacer | 109 | 100% |
+| por-hacer | 108 | 100% |
 | en-curso | 0 | 0% |
 | hecho | 0 | 0% |
 
@@ -134,7 +134,6 @@ _Nada pendiente de repaso._
 | 3.3.6 | Módulo 3.3 — Diseño e implementación de RAG con SQL | [Unidad 3.3.6 — Ejercicio: Implementación de una solución RAG](curso/path-3-implementacion-de-funcionalidades-de-ia-en-soluciones-de-base-de-datos/modulo-3.3-diseno-e-implementacion-de-rag-con-sql/unidades/3.3.6-ejercicio-implementacion-de-una-solucion-rag/README.md) | lab | 30 min |
 | 3.3.7 | Módulo 3.3 — Diseño e implementación de RAG con SQL | [Unidad 3.3.7 — Prueba de conocimientos](curso/path-3-implementacion-de-funcionalidades-de-ia-en-soluciones-de-base-de-datos/modulo-3.3-diseno-e-implementacion-de-rag-con-sql/unidades/3.3.7-prueba-de-conocimientos/README.md) | leccion | 5 min |
 | 3.3.8 | Módulo 3.3 — Diseño e implementación de RAG con SQL | [Unidad 3.3.8 — Resumen](curso/path-3-implementacion-de-funcionalidades-de-ia-en-soluciones-de-base-de-datos/modulo-3.3-diseno-e-implementacion-de-rag-con-sql/unidades/3.3.8-resumen/README.md) | resumen | 3 min |
-| X.Y.Z | Módulo X.Y — <título del módulo> | [Unidad X.Y.Z — <título de la unidad>](curso/_plantillas/unidad/README.md) | leccion | 0 min |
 
 ## En curso
 
@@ -147,7 +146,6 @@ _Ninguna unidad en curso._
 | Path 1 — Diseño y desarrollo de soluciones de base de datos | 0 | 43 | 0% |
 | Path 2 — Protección, optimización e implementación de soluciones de base de datos | 0 | 40 | 0% |
 | Path 3 — Implementación de funcionalidades de IA en soluciones de base de datos | 0 | 25 | 0% |
-| Path X — <título del path> | 0 | 1 | 0% |
 
 ## Avance por módulo
 
@@ -164,7 +162,6 @@ _Ninguna unidad en curso._
 | Módulo 3.1 — Diseñar e implementar modelos e incrustaciones con SQL | 0 | 8 | 0% |
 | Módulo 3.2 — Diseño e implementación de la búsqueda inteligente con SQL | 0 | 9 | 0% |
 | Módulo 3.3 — Diseño e implementación de RAG con SQL | 0 | 8 | 0% |
-| Módulo X.Y — <título del módulo> | 0 | 1 | 0% |
 
 ## Conceptos más frecuentes
 
@@ -282,4 +279,3 @@ _Aún no hay conceptos registrados en unidades._
 | 3.3.6 | Módulo 3.3 — Diseño e implementación de RAG con SQL | [Unidad 3.3.6 — Ejercicio: Implementación de una solución RAG](curso/path-3-implementacion-de-funcionalidades-de-ia-en-soluciones-de-base-de-datos/modulo-3.3-diseno-e-implementacion-de-rag-con-sql/unidades/3.3.6-ejercicio-implementacion-de-una-solucion-rag/README.md) | por-hacer | null | null |
 | 3.3.7 | Módulo 3.3 — Diseño e implementación de RAG con SQL | [Unidad 3.3.7 — Prueba de conocimientos](curso/path-3-implementacion-de-funcionalidades-de-ia-en-soluciones-de-base-de-datos/modulo-3.3-diseno-e-implementacion-de-rag-con-sql/unidades/3.3.7-prueba-de-conocimientos/README.md) | por-hacer | null | null |
 | 3.3.8 | Módulo 3.3 — Diseño e implementación de RAG con SQL | [Unidad 3.3.8 — Resumen](curso/path-3-implementacion-de-funcionalidades-de-ia-en-soluciones-de-base-de-datos/modulo-3.3-diseno-e-implementacion-de-rag-con-sql/unidades/3.3.8-resumen/README.md) | por-hacer | null | null |
-| X.Y.Z | Módulo X.Y — <título del módulo> | [Unidad X.Y.Z — <título de la unidad>](curso/_plantillas/unidad/README.md) | por-hacer | null | null |

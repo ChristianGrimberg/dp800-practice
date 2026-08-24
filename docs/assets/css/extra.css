@@ -1,0 +1,21 @@
+/* Ajustes personalizados para el sitio dp800-practice. */
+
+:root {
+  --md-admonition-icon--estado: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5zm0 7L3 14l9 5 9-5-9-5z"/></svg>');
+}
+
+/* Mejorar legibilidad de tablas */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+}
+
+/* Bloques de código más anchos */
+.md-typeset pre > code {
+  font-size: 0.82em;
+}
+
+/* Color de badges de estado en front-matter */
+.md-typeset code.language-yaml {
+  font-size: 0.78em;
+}
