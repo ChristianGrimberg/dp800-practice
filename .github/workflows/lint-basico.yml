@@ -1,0 +1,53 @@
+name: 📋 Linter básico
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  yamllint:
+    name: yamllint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet yamllint
+      - name: Lint YAML
+        run: |
+          yamllint -c .github/linters/.yamllint.yml .github/ mkdocs.yml || true
+
+  markdownlint:
+    name: markdownlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install -g markdownlint-cli
+      - name: Lint Markdown
+        run: |
+          markdownlint --config .github/linters/.markdownlint.jsonc \
+            README.md CONTRIBUTING.md AGENTS.md CHANGELOG.md \
+            recursos/ docs/ \
+            .github/ISSUE_TEMPLATE/ .github/PULL_REQUEST_TEMPLATE.md \
+            curso/_plantillas/ \
+            || true
+
+  actionlint:
+    name: actionlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p /tmp/actionlint-bin
+          curl -sSL https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash | bash -s -- 1.7.7 /tmp/actionlint-bin
+          /tmp/actionlint-bin/actionlint -color

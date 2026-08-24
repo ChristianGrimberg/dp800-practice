@@ -1,0 +1,17 @@
+---
+extends: default
+
+rules:
+  line-length:
+    max: 160
+    level: warning
+  document-start:
+    present: false  # permitimos .yml sin --- inicial
+  truthy:
+    check-keys: false
+  comments:
+    min-spaces-from-content: 1
+  comments-indentation: disable  # los comentarios en GitHub Actions no son estrictos
+  indentation:
+    spaces: 2
+    indent-sequences: true
