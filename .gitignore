@@ -1,0 +1,74 @@
+# Bytecode de Java / archivos de build
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+
+# Dependencias
+node_modules/
+vendor/
+
+# Entorno y credenciales
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.pfx
+
+# Datos temporales y caches
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.cache/
+*.tmp
+*.orig
+
+# Salidas de build
+dist/
+build/
+site/
+public/
+out/
+
+# Salidas de SQL Server / Azure SQL
+*.bacpac
+*.bak
+*.trn
+
+# Datos binarios versionables solo si el usuario los commitea a propósito
+*.csv
+*.parquet
+*.xlsx
+!recursos/**/*.csv
+
+# Outputs de mkdocs
+.doctrees/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Outputs de sqlfluff
+.sqlfluff_cache/
+
+# Cobertura de tests
+coverage/
+*.cover
+
+# Logs
+logs/
+*.log
+
+# Obsidian — personal (NO compartir sesión)
+.obsidian/workspace.json
+.obsidian/workspace.json.bak
+.obsidian/cache/
+.obsidian/themes/
+.obsidian/snippets/
+.trash/

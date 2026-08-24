@@ -1,0 +1,25 @@
+* text=auto eol=lf
+
+*.sql text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Detección de lenguajes para GitHub Linguist
+.gitattributes linguist-detectable=true
+*.md linguist-language=Markdown
+*.sql linguist-language=SQL
+*.ps1 linguist-detectable=false
+
+# Marcar archivos generados para excluir del cálculo de linguist
+docs/mapa-de-aprendizaje.md linguist-generated
