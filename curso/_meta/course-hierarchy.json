@@ -1,0 +1,827 @@
+{
+  "course": {
+    "title": "Curso DP-800T00-A: Desarrollo de soluciones de base de datos habilitadas para IA",
+    "code": "DP-800T00",
+    "url": "https://learn.microsoft.com/es-mx/training/courses/dp-800t00",
+    "description": "En este curso se proporcionan a los alumnos los conocimientos y aptitudes para diseñar y desarrollar soluciones de base de datos habilitadas para IA en plataformas de Microsoft SQL (SQL Server, Azure SQL, SQL en Microsoft Fabric). Cubre datos estructurados y semiestructurados, búsqueda de vectores, incrustaciones y funcionalidades de IA para aplicaciones empresariales escalables.",
+    "audience": "Profesionales de datos que quieren diseñar y desarrollar soluciones de bases de datos habilitadas para IA en plataformas SQL de Microsoft. Crea soluciones que incluyen datos estructurados y semiestructurados e integra características de IA en aplicaciones empresariales modernas y escalables.",
+    "duration": "3 días / 72 horas",
+    "level": "Intermedio",
+    "products": [
+      "SQL Server",
+      "Azure SQL Database",
+      "Azure SQL Managed Instance",
+      "Microsoft Fabric"
+    ],
+    "roles": [
+      "Analista de datos",
+      "Ingeniero de datos",
+      "Científico de datos",
+      "Administrador de base de datos"
+    ],
+    "subjects": [
+      "Inteligencia artificial",
+      "Bases de datos"
+    ],
+    "languages": [
+      "Inglés",
+      "Chino (simplificado)",
+      "Chino (tradicional)",
+      "Francés",
+      "Alemán",
+      "Italiano",
+      "Japonés",
+      "Coreano",
+      "Portugués (Brasil)",
+      "Español"
+    ],
+    "certification": "Certificación de Microsoft: Desarrollador asociado de SQL AI",
+    "certification_url": "https://learn.microsoft.com/es-es/credentials/certifications/developing-ai-enabled-database-solutions/"
+  },
+  "paths": [
+    {
+      "id": "design-develop-database-solutions",
+      "title": "Diseño y desarrollo de soluciones de base de datos",
+      "uid": "learn.wwl.design-develop-database-solutions",
+      "url": "https://learn.microsoft.com/es-mx/training/paths/design-develop-database-solutions/",
+      "duration_min": 431,
+      "modules": [
+        {
+          "title": "Diseño e implementación de objetos de base de datos con SQL",
+          "uid": "learn.wwl.design-implement-database-objects",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/",
+          "duration_min": 98,
+          "summary": "Aprenda a diseñar e implementar objetos de base de datos en bases de datos SQL Server, Azure SQL y SQL en Microsoft Fabric, incluidas tablas, índices, restricciones y tipos de tabla especializados.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/1-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Descripción de las opciones de la plataforma basada en SQL Server",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/2-understanding-platform-choices/",
+              "duration_min": 6,
+              "category": "leccion"
+            },
+            {
+              "title": "Creación de tablas eficaces",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/3-design-implement-tables/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Optimización con índices",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/4-design-implement-indexes/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Uso de tipos de tabla especializados",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/5-specialized-table-types/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Exigir la integridad de los datos con restricciones",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/6-design-implement-constraints/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Administración de columnas e índices JSON",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/7-design-implement-json/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Tablas de particiones para la escala",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/8-design-implement-partitioning/",
+              "duration_min": 13,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Creación y mantenimiento de objetos de base de datos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/9-exercise-create-database-objects/",
+              "duration_min": 15,
+              "category": "lab"
+            },
+            {
+              "title": "Evaluación del módulo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/10-knowledge-check/",
+              "duration_min": 10,
+              "category": "quiz"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-database-objects/11-summary/",
+              "duration_min": 3,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Implementación de objetos de programación con SQL",
+          "uid": "learn.wwl.implement-programmability-objects",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/",
+          "duration_min": 90,
+          "summary": "Aprenda a implementar vistas, procedimientos almacenados, funciones y desencadenadores en SQL Server para encapsular lógica, mejorar la reutilización de código y aplicar reglas de negocio.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/1-introduction/",
+              "duration_min": 2,
+              "category": "introduccion"
+            },
+            {
+              "title": "Creación de vistas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/2-create-views/",
+              "duration_min": 6,
+              "category": "leccion"
+            },
+            {
+              "title": "Creación de procedimientos almacenados",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/3-create-stored-procedures/",
+              "duration_min": 6,
+              "category": "leccion"
+            },
+            {
+              "title": "Creación de funciones escalares",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/4-create-scalar-functions/",
+              "duration_min": 6,
+              "category": "leccion"
+            },
+            {
+              "title": "Creación de funciones con valores de tabla",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/5-create-table-valued-functions/",
+              "duration_min": 5,
+              "category": "leccion"
+            },
+            {
+              "title": "Creación de desencadenadores",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/6-create-triggers/",
+              "duration_min": 6,
+              "category": "leccion"
+            },
+            {
+              "title": "Elegir cuándo usar cada opción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/7-choosing-when-to-use-each-programmability-object/",
+              "duration_min": 9,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Implementación de objetos de programación en SQL Server",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/8-exercise-implement-programmability-objects/",
+              "duration_min": 45,
+              "category": "lab"
+            },
+            {
+              "title": "Prueba de conocimientos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/9-knowledge-check/",
+              "duration_min": 3,
+              "category": "leccion"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-programmability-objects/10-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Escritura de código T-SQL avanzado",
+          "uid": "learn.write-advanced-sql-code",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/",
+          "duration_min": 146,
+          "summary": "Aprenda a escribir código T-SQL avanzado, como CTE, funciones de ventana, funciones JSON, expresiones regulares, coincidencia de cadenas aproximadas, consultas de grafos, consultas correlacionadas y control de errores.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/1-introduction/",
+              "duration_min": 2,
+              "category": "introduccion"
+            },
+            {
+              "title": "Organización de consultas con expresiones de tabla comunes",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/2-common-table-expressions/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Aplicación de funciones de ventana para análisis",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/3-window-functions/",
+              "duration_min": 14,
+              "category": "leccion"
+            },
+            {
+              "title": "Procesamiento de datos JSON con funciones integradas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/4-json-functions/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Emparejar patrones con expresiones regulares",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/5-regular-expressions/",
+              "duration_min": 14,
+              "category": "leccion"
+            },
+            {
+              "title": "Búsqueda de coincidencias aproximadas con funciones de cadenas difusas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/6-fuzzy-string-matching/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Recorrer las relaciones mediante consultas grapháticas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/7-graph-queries/",
+              "duration_min": 14,
+              "category": "leccion"
+            },
+            {
+              "title": "Comparar filas con subconsultas correlacionadas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/8-correlated-queries/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Control de errores con TRY...CATCH",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/9-error-handling/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Trabajo con funciones JSON",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/10-exercise-write-advanced-sql-code/",
+              "duration_min": 30,
+              "category": "lab"
+            },
+            {
+              "title": "Evaluación del módulo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/11-knowledge-check/",
+              "duration_min": 10,
+              "category": "quiz"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/write-advanced-sql-code/12-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Implementación de soluciones SQL mediante herramientas asistidas por IA",
+          "uid": "learn.design-implement-sql-solutions-ai-assisted-tools",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/",
+          "duration_min": 97,
+          "summary": "Aprenda a usar GitHub Copilot y Fabric Copilot para el desarrollo de bases de datos asistidas por IA en plataformas de Microsoft SQL, como SQL Server, Azure SQL y Microsoft Fabric.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/1-introduction/",
+              "duration_min": 2,
+              "category": "introduccion"
+            },
+            {
+              "title": "Descripción de las herramientas de desarrollo asistidas por IA disponibles para las plataformas de Microsoft SQL",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/2-describe-ai-assisted-development-tools/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Interpretación del impacto en la seguridad del uso de herramientas asistidas por IA",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/3-interpret-security-impact/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Habilitación de GitHub Copilot y Fabric Copilot",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/4-enable-github-copilot-fabric-copilot/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Configura el modelo y las opciones de la herramienta Model Context Protocol (MCP) en una sesión de chat de GitHub Copilot o Fabric Copilot",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/5-configure-model-mcp-tool-options/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Creación y configuración de archivos de instrucciones de Copilot de GitHub",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/6-create-configure-copilot-instruction-files/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Conexión a puntos de conexión de servidor MCP, incluidos Microsoft SQL Server y Fabric Lakehouse",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/7-connect-mcp-server-endpoints/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Configuración de herramientas asistidas por IA para el desarrollo de bases de datos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/8-exercise-design-implement-sql-solutions-ai-assisted-tools/",
+              "duration_min": 15,
+              "category": "lab"
+            },
+            {
+              "title": "Evaluación del módulo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/9-knowledge-check/",
+              "duration_min": 10,
+              "category": "quiz"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-sql-solutions-ai-assisted-tools/10-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secure-optimize-deploy-database-solutions",
+      "title": "Protección, optimización e implementación de soluciones de base de datos",
+      "uid": "learn.wwl.secure-optimize-deploy-database-solutions",
+      "url": "https://learn.microsoft.com/es-mx/training/paths/secure-optimize-deploy-database-solutions/",
+      "duration_min": 451,
+      "modules": [
+        {
+          "title": "Implementar seguridad de datos y cumplimiento con SQL",
+          "uid": "learn.implement-data-security-compliance",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/",
+          "duration_min": 121,
+          "summary": "Aprenda a implementar características de seguridad y cumplimiento de datos en bases de datos de SQL Server, Azure SQL y SQL en Microsoft Fabric, incluido el cifrado, el enmascaramiento, la seguridad Row-Level y la auditoría.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/1-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Protección de datos con cifrado",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/2-design-implement-data-encryption/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Configuración del enmascaramiento dinámico de datos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/3-design-implement-dynamic-data-masking/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Implementar la seguridad a nivel de fila",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/4-design-implement-row-level-security/",
+              "duration_min": 11,
+              "category": "leccion"
+            },
+            {
+              "title": "Administración de permisos y acceso seguro",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/5-design-implement-object-level-permissions/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Implementación de la auditoría",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/6-implement-auditing/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Configuración del acceso seguro a los servicios de IA",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/7-secure-model-endpoints/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Protección de puntos de conexión de API de datos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/8-secure-graphql-rest-mcp-endpoints/",
+              "duration_min": 11,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Implementación de características de seguridad",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/9-exercise-implement-security-features/",
+              "duration_min": 30,
+              "category": "lab"
+            },
+            {
+              "title": "Evaluación del módulo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/10-knowledge-check/",
+              "duration_min": 10,
+              "category": "quiz"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-data-security-compliance/11-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Optimización del rendimiento de la base de datos",
+          "uid": "learn.wwl.optimize-database-performance",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/",
+          "duration_min": 104,
+          "summary": "Optimice el rendimiento de Azure SQL Database eligiendo el nivel de servicio adecuado y administrando la simultaneidad con niveles de aislamiento. Analizar consultas con planes de ejecución y DMV. Utilice el almacén de consultas para la administración de planes y para resolver bloqueos e interbloqueos.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/01-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Recomendar configuraciones de base de datos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/02-recommend-database-configurations/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Conservar la integridad de los datos con los niveles de aislamiento de transacción y los controles de simultaneidad",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/03-preserve-data-integrity-isolation-levels/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Evaluación del rendimiento de las consultas con planes de ejecución y DMV",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/04-evaluate-query-performance/",
+              "duration_min": 10,
+              "category": "quiz"
+            },
+            {
+              "title": "Supervisión y optimización de consultas con el almacén de consultas y la información de rendimiento de consultas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/05-monitor-tune-queries-query-store/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Identificar y resolver bloqueos e interbloqueos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/06-identify-resolve-blocking-deadlocks/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Optimización del rendimiento de las consultas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/07-exercise-optimize-query-performance/",
+              "duration_min": 45,
+              "category": "lab"
+            },
+            {
+              "title": "Prueba de conocimientos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/08-knowledge-check/",
+              "duration_min": 5,
+              "category": "leccion"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/optimize-database-performance/09-summary/",
+              "duration_min": 3,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Implementación de CI/CD mediante proyectos de SQL Database",
+          "uid": "learn.wwl.implement-cicd-sql-database-projects",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/",
+          "duration_min": 116,
+          "summary": "Implemente CI/CD para proyectos de SQL Database con control de código fuente, bifurcación, detección de desfase de esquemas, canalizaciones automatizadas y estrategias de prueba mediante Acciones de GitHub y Azure DevOps.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/01-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Creación, compilación y validación de proyectos de SQL Database",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/02-create-build-validate-sql-database-projects/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Configuración del control de código fuente y administración de datos de referencia",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/03-configure-source-control-manage-reference-data/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Administración de la bifurcación, las solicitudes de incorporación de cambios y la resolución de conflictos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/04-manage-branching-pull-requests-conflict-resolution/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Detección y resolución de la deriva del esquema",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/05-detect-resolve-schema-drift/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Implementación de canalizaciones de CI/CD",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/06-implement-cicd-pipelines/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Diseño e implementación de una estrategia de prueba",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/07-design-implement-testing-strategy/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Implementación de CI/CD mediante proyectos de SQL Database",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/08-exercise-implement-cicd-sql-database-projects/",
+              "duration_min": 45,
+              "category": "lab"
+            },
+            {
+              "title": "Prueba de conocimientos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/09-knowledge-check/",
+              "duration_min": 5,
+              "category": "leccion"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/implement-cicd-sql-database-projects/10-summary/",
+              "duration_min": 3,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Integración de soluciones SQL con servicios de Azure",
+          "uid": "learn.integrate-sql-solutions-azure-services",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/",
+          "duration_min": 110,
+          "summary": "Aprenda a usar Data API Builder para crear API REST y GraphQL para bases de datos SQL, implementar en Azure, configurar la supervisión e implementar patrones controlados por eventos para el control de cambios.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/1-introduction/",
+              "duration_min": 2,
+              "category": "introduccion"
+            },
+            {
+              "title": "Creación de archivos de configuración para Data API Builder",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/2-create-configuration-files-data-api-builder/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Definición de entidades para REST y GraphQL",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/3-define-entities-rest-graphql/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Exponer objetos de base de datos, procedimientos almacenados y vistas",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/4-expose-database-objects-stored-procedures-views/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Exploración de las opciones de implementación de Data API Builder",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/5-deploy-data-api-builder-azure-services/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Recomendar configuraciones de Azure Monitor",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/6-recommend-azure-monitor-configurations/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Control de cambios con patrones controlados por eventos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/7-handle-changes-event-driven-patterns/",
+              "duration_min": 12,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Configuración de Data API Builder para un catálogo de productos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/8-exercise-data-api-builder/",
+              "duration_min": 30,
+              "category": "lab"
+            },
+            {
+              "title": "Evaluación del módulo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/9-knowledge-check/",
+              "duration_min": 10,
+              "category": "quiz"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/integrate-sql-solutions-azure-services/10-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implement-ai-capabilities-database-solutions",
+      "title": "Implementación de funcionalidades de IA en soluciones de base de datos",
+      "uid": "learn.wwl.implement-ai-capabilities-database-solutions",
+      "url": "https://learn.microsoft.com/es-mx/training/paths/implement-ai-capabilities-database-solutions/",
+      "duration_min": 220,
+      "modules": [
+        {
+          "title": "Diseñar e implementar modelos e incrustaciones con SQL",
+          "uid": "learn.wwl.design-implement-models-embeddings-with-sql",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/",
+          "duration_min": 61,
+          "summary": "Integre modelos de inteligencia artificial con Azure SQL Database mediante modelos externos, el tipo de datos vectorial y las funciones de IA integradas. Diseñar estrategias de inserción, generar incrustaciones a partir de texto e implementar patrones de mantenimiento.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/01-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Descripción y evaluación de modelos para cargas de trabajo de SQL Database",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/02-understand-evaluate-models-sql-database-workloads/",
+              "duration_min": 8,
+              "category": "quiz"
+            },
+            {
+              "title": "Creación y administración de modelos externos en SQL",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/03-create-manage-external-model-sql/",
+              "duration_min": 7,
+              "category": "leccion"
+            },
+            {
+              "title": "Diseño de inserciones para cargas de trabajo de SQL Database",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/04-design-embeddings-sql-database-workloads/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Generación y mantenimiento de incrustaciones para cargas de trabajo de SQL Database",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/05-generate-maintain-embeddings-sql-database-workloads/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Generación y actualización de incrustaciones en Azure SQL Database",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/06-exercise-generate-update-embeddings-sql/",
+              "duration_min": 20,
+              "category": "lab"
+            },
+            {
+              "title": "Prueba de conocimientos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/07-knowledge-check/",
+              "duration_min": 5,
+              "category": "leccion"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-models-embeddings-with-sql/08-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Diseño e implementación de la búsqueda inteligente con SQL",
+          "uid": "learn.wwl.design-implement-intelligent-search-with-sql",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/",
+          "duration_min": 84,
+          "summary": "Implemente funcionalidades de búsqueda inteligente en SQL Server y Azure SQL mediante la combinación de la búsqueda de texto completo tradicional con búsqueda de vectores semánticos. Aprenda a elegir enfoques de búsqueda, preparar SQL para la búsqueda de vectores e implementar patrones de búsqueda basados en vectores, híbridos y basados en clasificación.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/01-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Elección de un enfoque de búsqueda inteligente",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/02-choose-intelligent-search-approach/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Implementación de la búsqueda de texto completo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/03-implement-full-text-search/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Preparación de SQL para la búsqueda de vectores",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/04-prepare-sql-vector-search/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Implementación de patrones de consulta de búsqueda vectorial",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/05-implement-vector-search-query-patterns/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Implementación de la búsqueda híbrida y la clasificación",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/06-implement-hybrid-search-ranking/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Implementación de la búsqueda inteligente con consultas híbridas, vectoriales y de texto completo",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/07-exercise-implement-intelligent-search/",
+              "duration_min": 30,
+              "category": "lab"
+            },
+            {
+              "title": "Prueba de conocimientos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/08-knowledge-check/",
+              "duration_min": 5,
+              "category": "leccion"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-intelligent-search-with-sql/09-summary/",
+              "duration_min": 2,
+              "category": "resumen"
+            }
+          ]
+        },
+        {
+          "title": "Diseño e implementación de RAG con SQL",
+          "uid": "learn.wwl.design-implement-rag-with-sql",
+          "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/",
+          "duration_min": 75,
+          "summary": "Aprenda a implementar patrones de generación aumentada de recuperación (RAG) mediante Azure SQL Database. Identifique los casos de uso de RAG, prepare el contexto de base de datos para el procesamiento del modelo de lenguaje grande (LLM), construya solicitudes aumentadas y procese respuestas del modelo.",
+          "units": [
+            {
+              "title": "Introducción",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/1-introduction/",
+              "duration_min": 3,
+              "category": "introduccion"
+            },
+            {
+              "title": "Identificación de casos de uso y arquitectura de RAG",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/2-identify-rag-use-cases-architecture/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Preparación del contexto de recuperación para el aumento",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/3-prepare-retrieval-context-augmentation/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Aumento de avisos con contexto de base de datos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/4-augment-prompts-database-context/",
+              "duration_min": 8,
+              "category": "leccion"
+            },
+            {
+              "title": "Generar y procesar respuestas RAG",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/5-generate-process-rag-responses/",
+              "duration_min": 10,
+              "category": "leccion"
+            },
+            {
+              "title": "Ejercicio: Implementación de una solución RAG",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/6-exercise-implement-rag-solution/",
+              "duration_min": 30,
+              "category": "lab"
+            },
+            {
+              "title": "Prueba de conocimientos",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/7-knowledge-check/",
+              "duration_min": 5,
+              "category": "leccion"
+            },
+            {
+              "title": "Resumen",
+              "url": "https://learn.microsoft.com/es-mx/training/modules/design-implement-rag-with-sql/8-summary/",
+              "duration_min": 3,
+              "category": "resumen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "paths": 3,
+    "modules": 11,
+    "units": 108,
+    "lessons": 68,
+    "labs": 11,
+    "quizzes": 7,
+    "introductions": 11,
+    "summaries": 11
+  }
+}
