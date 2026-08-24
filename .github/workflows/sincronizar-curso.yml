@@ -1,0 +1,55 @@
+name: 🔄 Sincronizar con curso oficial
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # lunes 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  detectar-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Comparar course-hierarchy.json
+        id: comparar
+        run: |
+          LOCAL="curso/_meta/course-hierarchy.json"
+          TMP=$(mktemp)
+          gh api "repos/ChristianGrimberg/DP-800/contents/_meta/course-hierarchy.json" --jq '.content' | base64 -d > "$TMP"
+          if diff -q "$LOCAL" "$TMP" >/dev/null 2>&1; then
+            echo "sin_drift=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "sin_drift=false" >> "$GITHUB_OUTPUT"
+            mkdir -p /tmp/drift
+            cp "$LOCAL" /tmp/drift/local.json
+            cp "$TMP" /tmp/drift/remoto.json
+          fi
+
+      - name: Abrir issue de drift si aplica
+        if: steps.comparar.outputs.sin_drift == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `## 🔄 Drift detectado con el curso oficial
+            El archivo \`course-hierarchy.json\` del repo privado \`ChristianGrimberg/DP-800\` cambió respecto al espejo local.
+
+            ### Acción sugerida
+            1. Revisar el diff: \`bash scripts/sincronizar-curso.sh\`
+            2. Si hay nuevas unidades, considerar agregarlas a la estructura.
+            3. Si hay cambios de duración o URL, actualizar el front-matter correspondiente.
+            4. Cerrar este issue al sincronizar.
+
+            _Generado automáticamente por el workflow \`sincronizar-curso.yml\`._
+            `;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🔄 Drift detectado con ChristianGrimberg/DP-800',
+              body,
+              labels: ['drift', 'curso-oficial']
+            });

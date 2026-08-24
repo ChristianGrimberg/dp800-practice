@@ -1,0 +1,54 @@
+name: 👋 Bienvenida en PR nuevo
+
+on:
+  pull_request:
+    types: [opened]
+    branches: [main]
+    paths:
+      - 'curso/**/unidades/*/README.md'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  comentar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const archivos = pr.files || [];
+            const unidadMatch = archivos
+              .map(f => f.path)
+              .map(p => p.match(/unidades\/(\d+\.\d+\.\d+)-/))
+              .filter(Boolean)[0];
+            const codigo = unidadMatch ? unidadMatch[1] : 'desconocida';
+
+            const cuerpo = `👋 ¡Hola! Gracias por abrir este PR.
+
+            **Unidad detectada**: \`${codigo}\`
+
+            ### Checklist antes de mergear
+
+            - [ ] \`estado\` en front-matter es coherente con el avance
+            - [ ] Lint SQL pasa (CI verde)
+            - [ ] Validación de estructura pasa (CI verde)
+            - [ ] Front-matter completo (\`uid\`, \`url\`, \`duracion_min\`, \`conceptos\`)
+            - [ ] \`practica/\` si la categoría es \`leccion\` o \`lab\`
+            - [ ] \`teoria/\` presente con sus tres archivos
+            - [ ] Sección "Fuentes oficiales" en \`teoria/concepto.md\`
+            - [ ] Footer "Ver también" en \`teoria/concepto.md\`
+
+            Ver [CONTRIBUTING.md](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/blob/main/CONTRIBUTING.md) para detalles.
+            `;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              body: cuerpo
+            });

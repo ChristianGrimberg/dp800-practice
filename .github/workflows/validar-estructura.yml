@@ -1,0 +1,47 @@
+name: 📐 Validar estructura
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'curso/**'
+      - '.github/workflows/validar-estructura.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'curso/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    name: Validar estructura y front-matter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: Validar
+        id: validar
+        run: |
+          python3 scripts/validar-estructura.py | tee reporte.txt
+          STATUS=${PIPESTATUS[0]}
+          if [ "$STATUS" -ne 0 ]; then
+            echo "::error::La estructura no es válida. Ver reporte.txt."
+            exit 1
+          fi
+
+      - name: Subir reporte
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validar-estructura-report
+          path: reporte.txt
+          if-no-files-found: ignore

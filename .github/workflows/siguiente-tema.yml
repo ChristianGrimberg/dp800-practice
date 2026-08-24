@@ -1,0 +1,79 @@
+name: 📚 Sugerir siguiente tema
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+    paths:
+      - 'curso/**/unidades/*/README.md'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  sugerir:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml requests
+
+      - name: Detectar unidad practicada y sugerir siguiente
+        id: detectar
+        env:
+          MERGED_PR: ${{ github.event.pull_request.number }}
+        run: |
+          python3 scripts/siguiente-tema.py \
+            --merged-pr "$MERGED_PR" \
+            --curso-json curso/_meta/course-hierarchy.json \
+            --emit-env >> "$GITHUB_ENV"
+          echo "--- env final ---"
+          env | grep -E '^SIGUIENTE_' | sed 's/=.*$/=.../'
+          echo "--- fin ---"
+
+      - name: Comprobar SIGUIENTE_CODIGO presente
+        if: env.SIGUIENTE_CODIGO == ''
+        run: |
+          echo "No se detectó unidad modificada en el PR. No se crea issue."
+          exit 0
+
+      - name: Abrir issue del siguiente tema
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const titulo = `📚 Practicar Unidad ${process.env.SIGUIENTE_CODIGO} — ${process.env.SIGUIENTE_TITULO}`;
+            const labels = process.env.SIGUIENTE_LABELS.split(',');
+            const { data: issue } = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: titulo,
+              body: process.env.SIGUIENTE_CUERPO,
+              labels,
+              assignees: ['ChristianGrimberg']
+            });
+            core.setOutput('issue_number', issue.number);
+            console.log(`Issue creado: #${issue.number}`);
+
+      - name: Comentar en PR mergeado
+        if: steps.detectar.outputs.SIGUIENTE_CODIGO != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const issueNumber = ${{ steps.detectar.outputs.issue_number || '0' }};
+            if (issueNumber > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: `✅ Merge completado. Siguiente tema sugerido: #${issueNumber}`
+              });
+            }

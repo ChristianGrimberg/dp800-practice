@@ -1,0 +1,65 @@
+name: 🔍 Lint SQL
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'curso/**/*.sql'
+      - '.github/workflows/ci-sql-lint.yml'
+      - '.sqlfluff'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'curso/**/*.sql'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sqlfluff:
+    name: sqlfluff (tsql)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar sqlfluff
+        run: pip install --quiet sqlfluff
+
+      - name: Lint sobre practica/ completa
+        run: |
+          sqlfluff lint \
+            curso/ \
+            --dialect tsql \
+            --format github \
+            --nofail \
+            > sqlfluff.txt 2>&1 || true
+
+      - name: Resumen
+        if: always()
+        run: |
+          if [ -s sqlfluff.txt ]; then
+            echo "::group::Reporte sqlfluff"
+            cat sqlfluff.txt
+            echo "::endgroup::"
+            ERRORS=$(grep -c "^[|].*[|].*L:[0-9]" sqlfluff.txt || true)
+            echo "Errores/warnings: $ERRORS"
+            if [ "${ERRORS:-0}" -gt 0 ]; then
+              exit 1
+            fi
+          else
+            echo "✅ Sin hallazgos"
+          fi
+
+      - name: Subir reporte
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sqlfluff-report
+          path: sqlfluff.txt
+          if-no-files-found: ignore
