@@ -1,12 +1,12 @@
 ---
 title: Mapa de aprendizaje
-fecha_generacion: 2026-08-24
+fecha_generacion: 2026-08-25
 generado_por: scripts/generar-mapa.sh
 ---
 
 # Mapa de aprendizaje — DP-800 practice
 
-_Última regeneración: 2026-08-24 · Total unidades: 108_
+_Última regeneración: 2026-08-25 · Total unidades: 108_
 
 > Este mapa se regenera automáticamente en CI cada vez que cambia un front-matter de unidad. Para repasar eficientemente, empezá por la sección "Para repasar hoy".
 
