@@ -48,14 +48,17 @@ out/
 # Outputs de mkdocs
 .doctrees/
 
+# Caché de pip en CI
+.sqlfluff_cache/
+
+# Symlinks para MkDocs (se regeneran en CI y localmente)
+curso/_extras/
+
 # Python
 __pycache__/
 *.pyc
 .venv/
 venv/
-
-# Outputs de sqlfluff
-.sqlfluff_cache/
 
 # Cobertura de tests
 coverage/
@@ -72,5 +75,3 @@ logs/
 .obsidian/themes/
 .obsidian/snippets/
 .trash/
-mkdocs-src/
-site/

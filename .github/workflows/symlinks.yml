@@ -1,0 +1,28 @@
+name: 🔧 Generar symlinks de MkDocs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  symlinks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crear symlinks
+        run: |
+          mkdir -p curso/_extras
+          ln -sf ../../docs/index.md curso/_extras/index.md
+          ln -sf ../../recursos/glosario.md curso/_extras/glosario.md
+          ln -sf ../../recursos/bibliografia.md curso/_extras/bibliografia.md
+          ln -sf ../../recursos/comandos-utiles.md curso/_extras/comandos-utiles.md
+          ln -sf ../../recursos/obsidian.md curso/_extras/obsidian.md
+          ln -sf ../../CONTRIBUTING.md curso/_extras/CONTRIBUTING.md
+          ln -sf ../../AGENTS.md curso/_extras/AGENTS.md
+          ls -la curso/_extras/
