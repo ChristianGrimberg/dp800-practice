@@ -35,9 +35,6 @@ jobs:
             --merged-pr "$MERGED_PR" \
             --curso-json curso/_meta/course-hierarchy.json \
             --emit-env >> "$GITHUB_ENV"
-          echo "--- env final ---"
-          env | grep -E '^SIGUIENTE_' | sed 's/=.*$/=.../'
-          echo "--- fin ---"
 
       - name: Comprobar SIGUIENTE_CODIGO presente
         if: env.SIGUIENTE_CODIGO == ''

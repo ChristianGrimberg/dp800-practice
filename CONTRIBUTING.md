@@ -125,10 +125,37 @@ chore/actualizar-dependencias-mkdocs
 - El PR debe pasar CI verde (lint SQL + validar estructura + build docs).
 - Merge con **squash** para mantener `main` limpio.
 
+### Reglas obligatorias al abrir un PR
+
+Estas reglas son ley. Ningún PR puede saltarse alguna.
+
+| Regla | Cómo |
+|---|---|
+| **Base siempre `main`** | `gh pr create --base main` |
+| **Rama fresca basada en `origin/main`** | `git fetch origin main && git checkout -b feature/<...> origin/main` |
+| **PR siempre en Draft** | `gh pr create --draft`. El humano lo pasa a listo cuando lo apruebe. |
+| **Asignado al owner** | `gh pr create --assignee ChristianGrimberg` |
+| **Labels coherentes** | Labels `módulo:*` y `categoria:*` derivados del issue asociado, más un label de tipología (`enhancement`, `bug`, `documentation`, `chore`). |
+| **Cierra su issue** | Si el PR trata contenido de un issue, incluir `Closes #N` en el campo del template. Para fix/docs/infra/bot, completar con `N/A`. |
+| **Verificación post-creación** | El agente que abre el PR debe verificar con `gh pr view <n> --json isDraft,assignees,labels,body` que todo está como espera. Si el body contiene `\n` literales, regenerarlo antes de pasarlo a listo. |
+
+El skill `abrir-pr-desde-capitulo` aplica todas estas reglas en orden.
+
 ## Convención de issues
 
 - Usar `.github/ISSUE_TEMPLATE/nueva-practica.yml` para unidades nuevas.
 - El bot crea automáticamente issues con título `📚 Practicar Unidad X.Y.Z — <título>`.
+
+### Verificación post-creación
+
+El agente que crea o enriquece un issue es **responsable** de su legibilidad:
+
+1. Después de crear el issue, leerlo de vuelta: `gh issue view <n> --json body`.
+2. Verificar que el cuerpo renderiza bien en Markdown (headers, listas, saltos de línea reales).
+3. **Nunca** dejar un issue con `\n` literales en el cuerpo (caso bug #8).
+4. Si la verificación falla, regenerar el contenido con `gh issue edit <n> --body-file ...` y volver a verificar.
+
+Los workflows automatizados (ej. `siguiente-tema.yml`) emiten los cuerpos multi-línea con sintaxis heredoc para preservar los saltos de línea reales; si se observa un issue automático con cuerpo roto, es bug en el script `scripts/siguiente-tema.py`.
 
 ## Ramas protegidas
 
