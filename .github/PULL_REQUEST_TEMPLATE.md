@@ -6,7 +6,18 @@
 
 -
 
+## 🔗 Issue asociado
+
+<!-- Indicá qué issue(s) cierra este PR. Formato aceptado por GitHub:
+     Closes #N, Fixes #N, Resolves #N.
+     Obligatorio para PRs de contenido (práctica/teoría de unidades).
+     Para PRs de fix/docs/infra/bot donde no aplique, completá con N/A. -->
+
+- **Closes**: _ej. Closes #8_  | **N/A** (si no aplica)
+
 ## 📚 Unidad asociada
+
+<!-- Completar solo si el PR trata contenido de una unidad del curso. -->
 
 - **Código**: _ej. 1.1.3_
 - **Título**: _ej. Creación de tablas eficaces_

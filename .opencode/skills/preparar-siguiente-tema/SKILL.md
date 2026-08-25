@@ -1,6 +1,6 @@
 ---
 nombre: preparar-siguiente-tema
-version: 1.0
+version: 2.0
 idioma: es
 agentes_recomendados:
   - arquitecto-dp800
@@ -45,6 +45,38 @@ Un comentario nuevo en el issue con todas las secciones mencionadas, listo para 
    - Temas cubiertos.
 5. Generar el comentario enriquecido con todas las secciones.
 6. Postear el comentario con `gh issue comment <n> --body-file /tmp/comentario.md`.
+7. **Verificación post-enriquecimiento** (obligatoria): leer de vuelta el
+   issue y el comentario, confirmar que el Markdown renderiza bien
+   (saltos de línea reales, sin `\n` literales) y que el comentario
+   contiene las 6 secciones. Si algo no se renderiza bien, regenerar el
+   contenido y volver a postear; nunca dejar el issue con texto roto.
+
+## Verificación post-enriquecimiento
+
+```bash
+# 1. El cuerpo del issue no debe contener \\n literales
+ISSUE_BODY=$(gh issue view "$ISSUE_ISSUE" --json body --jq '.body')
+if echo "$ISSUE_BODY" | grep -q '\\n'; then
+  echo "FAIL: el cuerpo del issue #$ISSUE_ISSUE tiene \\n literales."
+  exit 1
+fi
+
+# 2. El último comentario sí debe tener saltos de línea reales y secciones esperadas
+LAST_COMMENT=$(gh issue view "$ISSUE_ISSUE" --comments --json comments \
+  --jq '.comments | last | .body')
+if echo "$LAST_COMMENT" | grep -q '\\n'; then
+  echo "FAIL: el comentario de enriquecimiento tiene \\n literales."
+  exit 1
+fi
+for sec in 'Resumen extraído' Prerrequisitos 'Esquema sugerido' \
+           'Casos de uso' 'Preguntas tipo examen'; do
+  echo "$LAST_COMMENT" | grep -q "$sec" || {
+    echo "FAIL: falta la sección '$sec' en el comentario."
+    exit 1;
+  }
+done
+echo "OK: issue #$ISSUE_ISSUE enriquecido correctamente."
+```
 
 ## Restricciones
 
@@ -52,6 +84,9 @@ Un comentario nuevo en el issue con todas las secciones mencionadas, listo para 
 - **No abrir PR** ni crear rama.
 - **No commitear**.
 - Si la `webfetch` falla, generar el contenido solo a partir del front-matter local y avisar.
+- **Nunca dar por terminado el skill sin haber ejecutado la verificación
+  post-enriquecimiento.** Si la verificación falla, regenerar y volver a
+  postear. El issue debe quedar legible en Markdown.
 
 ## Plantilla del comentario
 

@@ -16,6 +16,10 @@ Uso en workflow:
 
 Salida:
     - Stdout: variables de entorno en formato KEY=value si --emit-env.
+    - Las variables escalares se emiten como ``KEY=valor``.
+    - Las variables multi-línea (p.ej. ``SIGUIENTE_CUERPO``) se emiten con
+      sintaxis heredoc de GitHub Actions (``KEY<<DELIM\\ncontenido\\nDELIM``)
+      para preservar saltos de línea reales.
     - Variables emitidas:
         SIGUIENTE_CODIGO    (ej: 1.1.4)
         SIGUIENTE_TITULO    (ej: Optimización con índices)
@@ -24,7 +28,7 @@ Salida:
         SIGUIENTE_DURACION  (minutos)
         SIGUIENTE_CATEGORIA (introduccion | leccion | lab | quiz | resumen)
         SIGUIENTE_LABELS    (CSV: modulo:1.1,categoria:leccion,...)
-        SIGUIENTE_CUERPO    (Markdown del cuerpo del issue)
+        SIGUIENTE_CUERPO    (Markdown del cuerpo del issue, multi-línea)
 """
 import argparse
 import json
@@ -247,17 +251,28 @@ def main():
     labels = f"módulo:{nxt['mod_idx']},categoria:{nxt['unit']['category']},prioridad:media"
 
     if args.emit_env:
-        def env(k, v):
-            v = v.replace("\n", "\\n")
+        def env_scalar(k, v):
+            """Variable de una sola línea (KEY=valor)."""
             return f"{k}={v}"
 
-        print(env("SIGUIENTE_CODIGO", code_str))
-        print(env("SIGUIENTE_TITULO", nxt["unit"]["title"]))
-        print(env("SIGUIENTE_URL", nxt["unit"]["url"]))
-        print(env("SIGUIENTE_DURACION", str(nxt["unit"]["duration_min"])))
-        print(env("SIGUIENTE_CATEGORIA", nxt["unit"]["category"]))
-        print(env("SIGUIENTE_LABELS", labels))
-        print(env("SIGUIENTE_CUERPO", body))
+        def env_multiline(k, v):
+            """Variable multi-línea con sintaxis heredoc de GitHub Actions.
+
+            GitHub Actions interpreta ``KEY<<DELIM\\ncontenido\\nDELIM``
+            y asigna a ``KEY`` el contenido entre delimitadores sin escape,
+            preservando saltos de línea reales. Esto evita que el cuerpo del
+            issue aparezca con ``\\n`` literales (bug observado en #8).
+            """
+            delim = "_GH_ENV_EOF_"
+            return f"{k}<<{delim}\n{v}\n{delim}"
+
+        print(env_scalar("SIGUIENTE_CODIGO", code_str))
+        print(env_scalar("SIGUIENTE_TITULO", nxt["unit"]["title"]))
+        print(env_scalar("SIGUIENTE_URL", nxt["unit"]["url"]))
+        print(env_scalar("SIGUIENTE_DURACION", str(nxt["unit"]["duration_min"])))
+        print(env_scalar("SIGUIENTE_CATEGORIA", nxt["unit"]["category"]))
+        print(env_scalar("SIGUIENTE_LABELS", labels))
+        print(env_multiline("SIGUIENTE_CUERPO", body))
     else:
         out = {
             "codigo": code_str,

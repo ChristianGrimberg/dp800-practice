@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   regenerar:
@@ -28,7 +29,33 @@ jobs:
       - name: Ejecutar script
         run: bash scripts/generar-mapa.sh
 
+      - name: Asegurar label tipo:bot
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'tipo:bot',
+              });
+            } catch (e) {
+              if (e.status === 404) {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: 'tipo:bot',
+                  color: 'ededed',
+                  description: 'PR abierto por un workflow automatizado.',
+                });
+                console.log('Label tipo:bot creado.');
+              } else {
+                throw e;
+              }
+            }
+
       - name: Crear PR con el mapa regenerado
+        id: crear-pr
         uses: actions/github-script@v7
         with:
           script: |
@@ -40,7 +67,7 @@ jobs:
               return;
             }
             const branch = `bot/regenerar-mapa-${Date.now()}`;
-            execSync(`git checkout -b "${branch}"`);
+            execSync(`git checkout -b "${branch}" origin/main`);
             execSync('git add curso/mapa-de-aprendizaje.md');
             execSync('git config user.name "github-actions[bot]"');
             execSync('git config user.email "41898282+github-actions[bot]@users.noreply.github.com"');
@@ -53,6 +80,22 @@ jobs:
               head: branch,
               base: 'main',
               body: 'Regeneración automática del mapa a partir de los front-matter de las unidades.',
+              draft: true,
+              labels: ['documentation', 'tipo:bot'],
             });
             console.log(`PR creado: #${pr.number}`);
             core.setOutput('pr_number', pr.number);
+
+      - name: Asignar PR al owner
+        if: steps.crear-pr.outputs.pr_number != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = parseInt('${{ steps.crear-pr.outputs.pr_number }}', 10);
+            await github.rest.issues.addAssignees({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              assignees: ['ChristianGrimberg'],
+            });
+            console.log(`PR #${prNumber} asignado a ChristianGrimberg.`);

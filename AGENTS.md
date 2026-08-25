@@ -50,6 +50,11 @@ Cualquier agente o IA que opere en este proyecto debe seguir este orden:
 5. **Si la tarea toca estructura** → invocar `arquitecto-dp800` antes de crear archivos sueltos.
 6. **Al cerrar un PR mergeado** → no hacer nada (lo maneja el workflow `.github/workflows/siguiente-tema.yml`).
 7. **Antes de abrir un PR** → usar el skill `abrir-pr-desde-capitulo`.
+8. **Después de crear o enriquecer un issue** → el agente debe leerlo de vuelta
+   con `gh issue view <n> --json body` y verificar que el cuerpo es legible
+   en Markdown (sin `\n` literales, headers y listas renderizando). Si no lo
+   es, regenerar el contenido y avisar. **El agente es responsable de la
+   legibilidad de los issues que crea.**
 
 ## Combinaciones frecuentes
 
@@ -69,6 +74,16 @@ Cualquier agente o IA que opere en este proyecto debe seguir este orden:
 - **PRs**: usar `PULL_REQUEST_TEMPLATE.md`, un PR por unidad (o grupo de unidades de teoría pura).
 - **Front-matter**: todos los campos obligatorios, sin省略.
 - **main**: protegida, solo merge vía PR con CI verde.
+
+### Reglas de flujo (issues / PRs / merge)
+
+1. **PR siempre hacia `main`**: `--base main`, nunca otra rama base.
+2. **Rama siempre basada en `origin/main` actualizado**: `git fetch origin main && git checkout -b feature/<...> origin/main`.
+3. **PR siempre en Draft**: se crea con `--draft` y se mantiene en Draft hasta que el humano lo pase a listo.
+4. **PR siempre asignado al owner del repo** (`ChristianGrimberg`) y con labels coherentes.
+5. **PR de contenido cierra su issue**: incluir `Closes #<N>` en el body. Para PRs de fix/docs/infra/bot donde no aplique, completar con `N/A` en el campo del template.
+6. **Issues legibles**: el agente que crea o enriquece un issue es responsable de verificar que el cuerpo renderiza bien en Markdown (sin `\n` literales).
+7. **Ningún push directo a `main`**: todo cambio llega vía PR.
 
 ## Fuentes de verdad
 
