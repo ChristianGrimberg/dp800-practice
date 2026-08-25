@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   regenerar:
@@ -20,17 +21,38 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Ejecutar script
         run: bash scripts/generar-mapa.sh
 
-      - name: Commitear si hay cambios
-        run: |
-          if [[ -n "$(git status --porcelain curso/mapa-de-aprendizaje.md)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add curso/mapa-de-aprendizaje.md
-            git commit -m "🤖 regenerar mapa de aprendizaje"
-            git push
-          else
-            echo "Sin cambios en el mapa."
-          fi
+      - name: Crear PR con el mapa regenerado
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const { execSync } = require('child_process');
+            const status = execSync('git status --porcelain curso/mapa-de-aprendizaje.md').toString().trim();
+            if (!status) {
+              console.log("Sin cambios en el mapa. Nada que commitear.");
+              return;
+            }
+            const branch = `bot/regenerar-mapa-${Date.now()}`;
+            execSync(`git checkout -b "${branch}"`);
+            execSync('git add curso/mapa-de-aprendizaje.md');
+            execSync('git config user.name "github-actions[bot]"');
+            execSync('git config user.email "41898282+github-actions[bot]@users.noreply.github.com"');
+            execSync('git commit -m "🤖 regenerar mapa de aprendizaje"');
+            execSync(`git push origin "${branch}"`);
+            const { data: pr } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🤖 regenerar mapa de aprendizaje',
+              head: branch,
+              base: 'main',
+              body: 'Regeneración automática del mapa a partir de los front-matter de las unidades.',
+            });
+            console.log(`PR creado: #${pr.number}`);
+            core.setOutput('pr_number', pr.number);
