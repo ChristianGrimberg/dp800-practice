@@ -58,6 +58,17 @@ plugins:
       fallback_to_build_date: true
       enable_creation_date: false
 
+nav:
+  - Inicio: _extras/index.md
+  - Mapa de aprendizaje: mapa-de-aprendizaje.md
+  - Recursos:
+      - Glosario: _extras/glosario.md
+      - Bibliografía: _extras/bibliografia.md
+      - Comandos útiles: _extras/comandos-utiles.md
+      - Guía de Obsidian: _extras/obsidian.md
+  - Guía de contribución: _extras/CONTRIBUTING.md
+  - Routing de agentes: _extras/AGENTS.md
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -69,6 +80,10 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+      slugify:
+        !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
