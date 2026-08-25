@@ -14,9 +14,9 @@ _Última regeneración: 2026-08-25 · Total unidades: 108_
 
 | Estado | Cantidad | % |
 |---|---|---|
-| por-hacer | 108 | 100% |
+| por-hacer | 107 | 99% |
 | en-curso | 0 | 0% |
-| hecho | 0 | 0% |
+| hecho | 1 | 0% |
 
 ## Para repasar hoy
 
@@ -26,7 +26,6 @@ _Nada pendiente de repaso._
 
 | Código | Módulo | Unidad | Categoría | Duración |
 |---|---|---|---|---|
-| 1.1.1 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.1 — Introducción](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.1-introduccion/README.md) | introduccion | 3 min |
 | 1.1.10 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.10 — Evaluación del módulo](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.10-evaluacion-del-modulo/README.md) | quiz | 10 min |
 | 1.1.11 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.11 — Resumen](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.11-resumen/README.md) | resumen | 3 min |
 | 1.1.2 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.2 — Descripción de las opciones de la plataforma basada en SQL Server](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.2-descripcion-de-las-opciones-de-la-plataforma-basada-en-sql-server/README.md) | leccion | 6 min |
@@ -143,7 +142,7 @@ _Ninguna unidad en curso._
 
 | Path | Hechas | Total | % |
 |---|---|---|---|
-| Path 1 — Diseño y desarrollo de soluciones de base de datos | 0 | 43 | 0% |
+| Path 1 — Diseño y desarrollo de soluciones de base de datos | 1 | 43 | 2% |
 | Path 2 — Protección, optimización e implementación de soluciones de base de datos | 0 | 40 | 0% |
 | Path 3 — Implementación de funcionalidades de IA en soluciones de base de datos | 0 | 25 | 0% |
 
@@ -151,7 +150,7 @@ _Ninguna unidad en curso._
 
 | Módulo | Hechas | Total | % |
 |---|---|---|---|
-| Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | 0 | 11 | 0% |
+| Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | 1 | 11 | 9% |
 | Módulo 1.2 — Implementación de objetos de programación con SQL | 0 | 10 | 0% |
 | Módulo 1.3 — Escritura de código T-SQL avanzado | 0 | 12 | 0% |
 | Módulo 1.4 — Implementación de soluciones SQL mediante herramientas asistidas por IA | 0 | 10 | 0% |
@@ -165,13 +164,28 @@ _Ninguna unidad en curso._
 
 ## Conceptos más frecuentes
 
-_Aún no hay conceptos registrados en unidades._
+| Concepto | Apariciones |
+|---|---|
+| objetos de base de datos | 1 |
+| rowstore vs columnstore | 1 |
+| tablas en memoria | 1 |
+| tablas temporales | 1 |
+| tablas externas | 1 |
+| tablas LEDGER | 1 |
+| tablas GRAPH | 1 |
+| restricciones (PK, FK, UNIQUE, CHECK, DEFAULT) | 1 |
+| columnas JSON | 1 |
+| objetos SEQUENCE | 1 |
+| particionamiento de tablas e índices | 1 |
+| Azure SQL Database | 1 |
+| Azure SQL Managed Instance | 1 |
+| SQL Database en Microsoft Fabric | 1 |
 
 ## Tabla maestra
 
 | Código | Módulo | Unidad | Estado | PR | Próximo repaso |
 |---|---|---|---|---|---|
-| 1.1.1 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.1 — Introducción](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.1-introduccion/README.md) | por-hacer | null | null |
+| 1.1.1 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.1 — Introducción](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.1-introduccion/README.md) | hecho | 7 | 2026-09-25 |
 | 1.1.10 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.10 — Evaluación del módulo](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.10-evaluacion-del-modulo/README.md) | por-hacer | null | null |
 | 1.1.11 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.11 — Resumen](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.11-resumen/README.md) | por-hacer | null | null |
 | 1.1.2 | Módulo 1.1 — Diseño e implementación de objetos de base de datos con SQL | [Unidad 1.1.2 — Descripción de las opciones de la plataforma basada en SQL Server](path-1-diseno-y-desarrollo-de-soluciones-de-base-de-datos/modulo-1.1-diseno-e-implementacion-de-objetos-de-base-de-datos-con-sql/unidades/1.1.2-descripcion-de-las-opciones-de-la-plataforma-basada-en-sql-server/README.md) | por-hacer | null | null |
