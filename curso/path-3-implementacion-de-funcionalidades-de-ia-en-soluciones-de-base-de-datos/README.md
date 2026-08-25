@@ -31,4 +31,4 @@ Path del curso oficial DP-800T00-A que agrupa 3 módulos.
 | 3.2 | 9 | ⬜ por empezar |
 | 3.3 | 8 | ⬜ por empezar |
 
-> Ver el [mapa de aprendizaje](../../docs/mapa-de-aprendizaje.md) para estado global.
+> Ver el [mapa de aprendizaje](../mapa-de-aprendizaje.md) para estado global.

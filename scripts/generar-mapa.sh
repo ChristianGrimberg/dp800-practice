@@ -15,8 +15,8 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-OUT="docs/mapa-de-aprendizaje.md"
-mkdir -p docs
+OUT="curso/mapa-de-aprendizaje.md"
+mkdir -p "$(dirname "$OUT")"
 TMP="$(mktemp)"
 trap 'rm -f "$TMP"' EXIT
 
@@ -31,7 +31,7 @@ from collections import Counter, defaultdict
 from datetime import date
 
 ROOT = 'curso'
-OUT = 'docs/mapa-de-aprendizaje.md'
+OUT = 'curso/mapa-de-aprendizaje.md'
 
 def parse_fm(text):
     """Devuelve dict con el front-matter; vacío si no hay."""
@@ -91,7 +91,7 @@ for dirpath, _, files in os.walk(ROOT):
             conceptos = []
         dur = fm.get('duracion_min', '')
         url = fm.get('url', '')
-        rel = os.path.relpath(path, '.')
+        rel = os.path.relpath(path, 'curso')
         units.append({
             'codigo': codigo, 'modulo': modulo, 'unidad': unidad,
             'estado': estado, 'categoria': categoria, 'pr': pr,
