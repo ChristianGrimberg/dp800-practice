@@ -25,10 +25,10 @@ jobs:
 
       - name: Commitear si hay cambios
         run: |
-          if [[ -n "$(git status --porcelain docs/mapa-de-aprendizaje.md)" ]]; then
+          if [[ -n "$(git status --porcelain curso/mapa-de-aprendizaje.md)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add docs/mapa-de-aprendizaje.md
+            git add curso/mapa-de-aprendizaje.md
             git commit -m "🤖 regenerar mapa de aprendizaje"
             git push
           else
