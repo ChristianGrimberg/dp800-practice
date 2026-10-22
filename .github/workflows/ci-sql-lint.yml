@@ -7,10 +7,9 @@ on:
       - 'curso/**/*.sql'
       - '.github/workflows/ci-sql-lint.yml'
       - '.sqlfluff'
+  # Los checks obligatorios deben ejecutarse en todos los PRs.
   pull_request:
     branches: [main]
-    paths:
-      - 'curso/**/*.sql'
   workflow_dispatch:
 
 permissions:
