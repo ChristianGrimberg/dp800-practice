@@ -6,10 +6,9 @@ on:
     paths:
       - 'curso/**'
       - '.github/workflows/validar-estructura.yml'
+  # Los checks obligatorios deben ejecutarse en todos los PRs.
   pull_request:
     branches: [main]
-    paths:
-      - 'curso/**'
   workflow_dispatch:
 
 permissions:
