@@ -82,3 +82,15 @@ Reporte en Markdown con tabla de diffs:
 ```text
 "Usá el skill sincronizar-con-curso-oficial"
 ```
+
+## Autenticación y códigos de salida
+
+El workflow requiere el secret de Actions `COURSE_REPO_TOKEN`: un token con
+acceso de lectura a los contenidos del repositorio privado `ChristianGrimberg/DP-800`.
+El `GITHUB_TOKEN` de `dp800-practice` no concede acceso al otro repositorio.
+Para uso local, autenticar `gh` con una cuenta que pueda leer el curso.
+
+`bash scripts/sincronizar-curso.sh` devuelve `0` sin diferencias, `1` con drift
+confirmado y `2` ante errores de descarga o JSON inválido. Nunca copia cambios
+automáticamente. Un error de acceso hace fallar el workflow sin abrir issues;
+si hay drift real, se abre un aviso solo cuando no existe otro abierto.

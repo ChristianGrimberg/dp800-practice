@@ -5,6 +5,10 @@ on:
     - cron: '0 9 * * 1'  # lunes 09:00 UTC
   workflow_dispatch:
 
+concurrency:
+  group: sincronizar-curso
+  cancel-in-progress: false
+
 permissions:
   contents: read
   issues: write
@@ -18,23 +22,39 @@ jobs:
       - name: Comparar course-hierarchy.json
         id: comparar
         run: |
-          LOCAL="curso/_meta/course-hierarchy.json"
-          TMP=$(mktemp)
-          gh api "repos/ChristianGrimberg/DP-800/contents/_meta/course-hierarchy.json" --jq '.content' | base64 -d > "$TMP"
-          if diff -q "$LOCAL" "$TMP" >/dev/null 2>&1; then
-            echo "sin_drift=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "sin_drift=false" >> "$GITHUB_OUTPUT"
-            mkdir -p /tmp/drift
-            cp "$LOCAL" /tmp/drift/local.json
-            cp "$TMP" /tmp/drift/remoto.json
+          # El token de este repositorio no puede leer el curso privado.
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Configurá COURSE_REPO_TOKEN con acceso de lectura a ChristianGrimberg/DP-800."
+            exit 1
           fi
+          STATUS=0
+          bash scripts/sincronizar-curso.sh || STATUS=$?
+          case "$STATUS" in
+            0) echo "sin_drift=true" >> "$GITHUB_OUTPUT" ;;
+            1) echo "sin_drift=false" >> "$GITHUB_OUTPUT" ;;
+            *) echo "::error::Falló la consulta del curso; no se crea un aviso de drift."; exit "$STATUS" ;;
+          esac
+        env:
+          GH_TOKEN: ${{ secrets.COURSE_REPO_TOKEN }}
 
       - name: Abrir issue de drift si aplica
         if: steps.comparar.outputs.sin_drift == 'false'
         uses: actions/github-script@v7
         with:
           script: |
+            // Paginar también cuando hay más de 100 issues abiertos.
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'drift,curso-oficial',
+              per_page: 100
+            });
+            const title = '🔄 Drift detectado con ChristianGrimberg/DP-800';
+            if (issues.some(issue => !issue.pull_request && issue.title === title)) {
+              core.info('Ya existe un issue abierto para este drift.');
+              return;
+            }
             const body = `## 🔄 Drift detectado con el curso oficial
             El archivo \`course-hierarchy.json\` del repo privado \`ChristianGrimberg/DP-800\` cambió respecto al espejo local.
 
@@ -49,7 +69,7 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: '🔄 Drift detectado con ChristianGrimberg/DP-800',
+              title,
               body,
               labels: ['drift', 'curso-oficial']
             });
